@@ -28,6 +28,18 @@ char GET_INSTR[4] = "GET";
 char ACK_INSTR[4] = "ACK";
 char ERR_INSTR[4] = "ERR";
 
+std::string input_packet_loss_rate;
+std::string input_packet_damage_rate;
+
+float packet_loss_rate;
+float packet_damage_rate;
+
+// gremlins
+// 
+//  Given a char buffer, corruption chance, and loss chance, mutate the packets data to create an
+//  invalid packet.
+//
+int gremlins(char buffer[], double corruptionChance, double lossChance, double delayChance, int delayTime);
 
 // empty_buffer
 //
@@ -72,6 +84,13 @@ int main() {
     socklen_t client_size = sizeof(client_addr);
     client_fd = accept(sd, (struct sockaddr *)&client_addr, &client_size);
 
+    std::cout << "Enter packet loss chance: " << std::flush;
+    std::getline(std::cin, input_packet_loss_rate);
+    packet_loss_rate = std::stof(input_packet_loss_rate);
+
+    std::cout << "Enter packet damage chance: " << std::flush;
+    std::getline(std::cin, input_packet_damage_rate);
+    packet_damage_rate = std::stof(input_packet_damage_rate);
 
     std::cout << "Ready" << std::endl;
 
@@ -151,6 +170,8 @@ int main() {
                     std::memcpy(packet+TERMINATOR_BYTE+CHECKSUM_SIZE, &packet_count_buffer, PACKET_COUNT_SIZE);
                     std::memcpy(packet+HEADER_SIZE, &data_buffer, DATA_SIZE);
 
+                    gremlins()
+
                     // Send packet to client
                     sendto(sd, packet, SEGMENT_SIZE, 0, (struct sockaddr *)&server, sizeof(server));
 
@@ -226,7 +247,7 @@ void generate_checksum(char data_buffer[], char checksum_buffer[]) {
 //  Given a char buffer, corruption chance, and loss chance, mutate the packets data to create an
 //  invalid packet.
 //
-int gremlins(char buffer[], double corruptionChance, double lossChance){
+int gremlins(char buffer[], double corruptionChance, double lossChance, double delayChance, int delayTime){
     double randomNum;
     int randomByte;
     srand(rand()*time(NULL));
@@ -241,6 +262,9 @@ int gremlins(char buffer[], double corruptionChance, double lossChance){
     if(rand_losschance < lossChance){ //Checks for loss of packet
         std::cout << "[Gremlin] Packet was lost" << std::endl;
         return 1;
+    }
+    else if ((double) rand()/RAND_MAX < delayChance){ //Checks for delay of packet
+        
     }
     else if ((double) rand()/RAND_MAX < corruptionChance) { //Checks for corruption of packet
         randomNum = (double) rand()/RAND_MAX;

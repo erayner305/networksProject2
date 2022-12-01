@@ -48,15 +48,6 @@ void empty_buffer(char buffer[], int size);
 //
 void generate_checksum(char input_buffer[], char output_buffer[]);
 
-
-// gremlins
-// 
-//  Given a char buffer, corruption chance, and loss chance, mutate the packets data to create an
-//  invalid packet.
-//
-int gremlins(char buffer[], double corruptionChance, double lossChance);
-
-
 int main(int argc, char **argv) {
 
     // Poll for target IP address
@@ -89,26 +80,12 @@ int main(int argc, char **argv) {
     char packet_checksum_buff[CHECKSUM_SIZE];
     char packet_number_buff[PACKET_COUNT_SIZE];
 
-    std::string input_packet_loss_rate;
-    std::string input_packet_damage_rate;
-
-    float packet_loss_rate;
-    float packet_damage_rate;
-
     // Poll infinitely for the file we want to receive,
     // Construct it if it exists
     // Retry if the file does not exist on the server
     while(true) {
         std::cout << "File name to download: " << std::flush;
         std::getline(std::cin, input_filename);
-
-        std::cout << "Enter packet loss chance: " << std::flush;
-        std::getline(std::cin, input_packet_loss_rate);
-        packet_loss_rate = std::stof(input_packet_loss_rate);
-
-        std::cout << "Enter packet damage chance: " << std::flush;
-        std::getline(std::cin, input_packet_damage_rate);
-        packet_damage_rate = std::stof(input_packet_damage_rate);
 
         char packet[SEGMENT_SIZE];
         
@@ -270,49 +247,3 @@ void generate_checksum(char data_buffer[], char checksum_buffer[]) {
     memcpy(checksum_buffer, &sum, sizeof(sum));
 }
 
-// gremlins
-// 
-//  Given a char buffer, corruption chance, and loss chance, mutate the packets data to create an
-//  invalid packet.
-//
-int gremlins(char buffer[], double corruptionChance, double lossChance){
-    double randomNum;
-    int randomByte;
-    srand(rand()*time(NULL));
-
-    //Error Checking.
-    if (corruptionChance > 1 || corruptionChance < 0 || lossChance > 1 || lossChance < 0) { 
-        return -1;
-    } 
-
-    double rand_losschance = (double) rand() / RAND_MAX;
-
-    if(rand_losschance < lossChance){ //Checks for loss of packet
-        std::cout << "[Gremlin] Packet was lost" << std::endl;
-        return 1;
-    }
-    else if ((double) rand()/RAND_MAX < corruptionChance) { //Checks for corruption of packet
-        randomNum = (double) rand()/RAND_MAX;
-        if(randomNum <= 0.7){ //70% only one packet is affected
-            std::cout << "[Gremlin] 1/3 bytes were affected" << std::endl;
-            randomByte = rand() % 512;
-            buffer[randomByte] = '1';
-        }
-        
-        if(randomNum <= 0.2){ //20% chance two packets are affected
-            std::cout << "[Gremlin] 2/3 bytes were affected" << std::endl;
-            randomByte = rand() % 512;
-            buffer[randomByte] = '1';
-        }
-
-        if(randomNum <= 0.1){ //10% chance three packets are affected
-            std::cout << "[Gremlin] 3/3 bytes were affected" << std::endl;
-            randomByte = rand() % 512;
-            buffer[randomByte] = '1';
-        }
-        return 2;
-    }
-
-    return 0;
- 
-}
