@@ -118,63 +118,58 @@ int main(int argc, char **argv) {
             for (;;) {
                 // Get packet data
                 n = recvfrom(sd, message_buffer, SEGMENT_SIZE, 0, (struct sockaddr*)&server, &serAddrLen);
-                int packet_status = gremlins(message_buffer, packet_damage_rate, packet_loss_rate);
-                if(packet_status != 1) {
-                    std::cout << "[Info] Got " << n << " bytes in response" << std::endl;
 
-                    // If the first byte of our buffer is \0, break out of our loop for receiving packets
-                    if (message_buffer[0] == '\0') {
-                        break;
-                    }
+                std::cout << "[Info] Got " << n << " bytes in response" << std::endl;
 
-                    // Determine the checksum and packet number values
-                    std::memcpy(packet_checksum_buff, &message_buffer[1], 4);
-                    std::memcpy(packet_number_buff, &message_buffer[5], 4);
-
-                    uint32_t packet_number = buffToUint32(packet_number_buff);
-                    uint32_t packet_checksum = buffToUint32(packet_checksum_buff); 
-
-                    std::cout << "[Info] Got packet number: " << packet_number << std::endl;
-                    std::cout << "[Info] Got packet checksum: " << packet_checksum << std::endl;
-
-
-                    // Get the raw file data from the message buffer
-                    std::memcpy(file_data_buffer, &message_buffer[9], 503);
-                    file_data_buffer[DATA_SIZE] = '\0';
-
-                    size_t len = strlen(file_data_buffer);
-                    char * newBuf = (char *)malloc(len);
-                    std::memcpy(newBuf, &file_data_buffer, len);
-
-
-                    // Generate the checksum from the packet and make sure it is
-                    // correct to the one included in the header
-                    generate_checksum(newBuf, packet_calculated_checksum_buff);
-                    uint32_t actual_checksum = buffToUint32(packet_calculated_checksum_buff);
-                    if(actual_checksum != packet_checksum) {
-                        std::cout << "[Error] Packet Damaged" << std::endl;
-                        std::cout << "\tRecieved: " << actual_checksum << std::endl;
-                        std::cout << "\tExpected: " << packet_checksum << std::endl;
-                    } else {
-                        std::cout << "[Info] Packet contents OK" << std::endl;
-                    }
-
-                    // Generate our packet tuple from the incoming packet
-                    std::vector<char> file_buffer_vector(newBuf, newBuf + len);
-                    std::tuple<uint32_t, std::vector<char>> packet_tuple (packet_number, file_buffer_vector);
-
-                    // Append the packet tuple to our vector of file data
-                    file_data_vector.push_back(packet_tuple);
-
-                    // Clear all our buffers
-                    empty_buffer(message_buffer, 4);
-                    empty_buffer(packet_calculated_checksum_buff, 4);
-                    empty_buffer(packet_checksum_buff, 4);
-                    empty_buffer(packet_number_buff, 4);
-                } else {
-                    // Packet chance passed, drop our packet
-                    std::cout << "Packet Dropped!" << std::endl;
+                // If the first byte of our buffer is \0, break out of our loop for receiving packets
+                if (message_buffer[0] == '\0') {
+                    break;
                 }
+
+                // Determine the checksum and packet number values
+                std::memcpy(packet_checksum_buff, &message_buffer[1], 4);
+                std::memcpy(packet_number_buff, &message_buffer[5], 4);
+
+                uint32_t packet_number = buffToUint32(packet_number_buff);
+                uint32_t packet_checksum = buffToUint32(packet_checksum_buff); 
+
+                std::cout << "[Info] Got packet number: " << packet_number << std::endl;
+                std::cout << "[Info] Got packet checksum: " << packet_checksum << std::endl;
+
+
+                // Get the raw file data from the message buffer
+                std::memcpy(file_data_buffer, &message_buffer[9], 503);
+                file_data_buffer[DATA_SIZE] = '\0';
+
+                size_t len = strlen(file_data_buffer);
+                char * newBuf = (char *)malloc(len);
+                std::memcpy(newBuf, &file_data_buffer, len);
+
+
+                // Generate the checksum from the packet and make sure it is
+                // correct to the one included in the header
+                generate_checksum(newBuf, packet_calculated_checksum_buff);
+                uint32_t actual_checksum = buffToUint32(packet_calculated_checksum_buff);
+                if(actual_checksum != packet_checksum) {
+                    std::cout << "[Error] Packet Damaged" << std::endl;
+                    std::cout << "\tRecieved: " << actual_checksum << std::endl;
+                    std::cout << "\tExpected: " << packet_checksum << std::endl;
+                } else {
+                    std::cout << "[Info] Packet contents OK" << std::endl;
+                }
+
+                // Generate our packet tuple from the incoming packet
+                std::vector<char> file_buffer_vector(newBuf, newBuf + len);
+                std::tuple<uint32_t, std::vector<char>> packet_tuple (packet_number, file_buffer_vector);
+
+                // Append the packet tuple to our vector of file data
+                file_data_vector.push_back(packet_tuple);
+
+                // Clear all our buffers
+                empty_buffer(message_buffer, 4);
+                empty_buffer(packet_calculated_checksum_buff, 4);
+                empty_buffer(packet_checksum_buff, 4);
+                empty_buffer(packet_number_buff, 4);
             }
             
             std::cout << "[Info] Terminator packet received, end of transmission" << std::endl;
