@@ -1,3 +1,12 @@
+// client.cpp
+//
+//  Application for serving file packets and sending data to client machine
+//
+// Authors:
+//  Garrett Dickinson
+//  Logan Sayle
+//  Easton Rayner
+
 #include "unp.h"
 #include <iostream>
 #include <fstream>
@@ -7,20 +16,37 @@
 #include <unistd.h>
 
 int SEGMENT_SIZE = 512;
+int TERMINATOR_BYTE = 1;
 int CHECKSUM_SIZE = 4;
 int PACKET_COUNT_SIZE = 4;
 int INSTRUCTION_SIZE = 3;
-int HEADER_SIZE = CHECKSUM_SIZE + PACKET_COUNT_SIZE;
+int HEADER_SIZE = TERMINATOR_BYTE + CHECKSUM_SIZE + PACKET_COUNT_SIZE;
 int DATA_SIZE = SEGMENT_SIZE - HEADER_SIZE;
 
+char TERM_OKAY = '1';
 char GET_INSTR[4] = "GET";
 char ACK_INSTR[4] = "ACK";
 char ERR_INSTR[4] = "ERR";
 
+
+// empty_buffer
+//
+//  Set all cells of a char buffer to NUL character
+//
 void empty_buffer(char buffer[], int size);
 
+
+// generate_checksum
+// 
+//  Given a char buffer, generate a checksum and return the value in a provided char[4] buffer
+//
 void generate_checksum(char input_buffer[], char output_buffer[]);
 
+
+// generate_packet_num
+// 
+//  Given a uint32_t packet number, return the value in a provided char[4] buffer
+//
 void generate_packet_num(uint32_t packet_num, char packet_num_buffer[]);
 
 int main() {
@@ -54,25 +80,25 @@ int main() {
     int packet_count = 0;
     
     // Define char buffers  based on our segment size
-    char data_buffer[DATA_SIZE] = {};
+    char data_buffer[DATA_SIZE];
     
     // Define an empty buffer for our generated checksum
-    char checksum_buffer[CHECKSUM_SIZE] = {};
+    char checksum_buffer[CHECKSUM_SIZE];
 
     // Define an empty buffer for our generated checksum
-    char packet_count_buffer[PACKET_COUNT_SIZE] = {};   
+    char packet_count_buffer[PACKET_COUNT_SIZE];   
 
     // Define our empty packet
-    char packet[SEGMENT_SIZE] = {};
+    char packet[SEGMENT_SIZE];
 
     // Define our buffer to store our incoming message
-    char message_buffer[SEGMENT_SIZE] = {};
+    char message_buffer[SEGMENT_SIZE];
 
     // Define a buffer to store the GET instruction of the message 
-    char instruction_buffer[4] = {};
+    char instruction_buffer[4];
 
     // Define a buffer to store the filename passed in the GET packet
-    char filename_buffer[SEGMENT_SIZE - INSTRUCTION_SIZE] = {};
+    char filename_buffer[SEGMENT_SIZE - INSTRUCTION_SIZE];
 
     // Input string to open
     std::string input_name;
@@ -80,24 +106,32 @@ int main() {
     // File in stream
     std::ifstream file_in;
 
-
+    // Poll infinitely for requests from the client
     while (true) {
         std::cout << "Waiting for request" << std::endl;
 
+        // Capture the recieved message bytes to the message buffer
         n = recvfrom(sd, message_buffer, SEGMENT_SIZE, 0, (struct sockaddr *)&server, &serverLen);
-
+        
+        // Pull the instruction out of the message buffer into the instruction buffer 
         std::copy(message_buffer, message_buffer+4, instruction_buffer);
 
+        // Check if the instruction is a GET request
         if (strcmp(instruction_buffer, GET_INSTR) == 0) {
 
+            // Copy the file name from the request to the filename char buffer
             std::copy(message_buffer+4, message_buffer+SEGMENT_SIZE, filename_buffer);
 
+            // Cast the buffer to a std::string
             std::string target_filename = std::string(filename_buffer);
 
+            // Open the targe file
             file_in.open(target_filename.c_str(), std::ios_base::binary);
 
+            // Check if the file exists
             if (file_in) {
 
+                // Send an ACK packet to the client
                 sendto(sd, ACK_INSTR, 4, 0, (struct sockaddr*)&server, sizeof(server));
 
                 // File requested exists, send all of the packets for the file
@@ -112,8 +146,9 @@ int main() {
                     generate_checksum(data_buffer, checksum_buffer);
                     generate_packet_num(++packet_count, packet_count_buffer);
 
-                    std::memcpy(packet, &checksum_buffer, CHECKSUM_SIZE);
-                    std::memcpy(packet+CHECKSUM_SIZE, &packet_count_buffer, PACKET_COUNT_SIZE);
+                    std::memcpy(packet, &TERM_OKAY, TERMINATOR_BYTE);    
+                    std::memcpy(packet+TERMINATOR_BYTE, &checksum_buffer, CHECKSUM_SIZE);
+                    std::memcpy(packet+TERMINATOR_BYTE+CHECKSUM_SIZE, &packet_count_buffer, PACKET_COUNT_SIZE);
                     std::memcpy(packet+HEADER_SIZE, &data_buffer, DATA_SIZE);
 
                     // Send packet to client
@@ -123,19 +158,23 @@ int main() {
                     usleep(100);
                 }
 
+                // Send terminal \0 byte to the client marking end of tranmission
                 sendto(sd, "\0", 1, 0, (struct sockaddr *)&server, sizeof(server));
 
             } else {
 
+                // Packet does not exist, send an ERR packet to the client
                 std::cout << "[Error] Received request for file " << target_filename << " that does not exist" << std::endl;
                 sendto(sd, ERR_INSTR, 4, 0, (struct sockaddr*)&server, sizeof(server));
 
             }
 
+            // Clear all of our working buffers
             empty_buffer(packet, SEGMENT_SIZE);
             empty_buffer(message_buffer, SEGMENT_SIZE);
             empty_buffer(data_buffer, DATA_SIZE);
             
+            // Close our file and reset our packet counts
             file_in.close();
             packet_count = 0;
         }
@@ -147,6 +186,10 @@ int main() {
 }
 
 
+// empty_buffer
+//
+//  Set all cells of a char buffer to NUL character
+//
 void empty_buffer(char buffer[], int size) {
     for (int i = 0; i < size; i++) {
         buffer[i] = '\0';
@@ -154,15 +197,24 @@ void empty_buffer(char buffer[], int size) {
 }
 
 
+// generate_packet_num
+// 
+//  Given a uint32_t packet number, return the value in a provided char[4] buffer
+//
 void generate_packet_num(uint32_t packet_num, char packet_num_buffer[]) {
     std::cout << "Generated Packet Number: " << packet_num << std::endl;
     memcpy(packet_num_buffer, &packet_num, sizeof(packet_num));
 }
 
 
+// generate_checksum
+// 
+//  Given a char buffer, generate a checksum and return the value in a provided char[4] buffer
+//
 void generate_checksum(char data_buffer[], char checksum_buffer[]) {
     uint32_t sum = 0;
     for(int i = 0; i < DATA_SIZE; i++) {
+        if (data_buffer[i] == '\0') break;
         sum += data_buffer[i];
     }
     std::cout << "Generated Checksum: " << sum << std::endl;

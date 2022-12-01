@@ -1,0 +1,1796 @@
+Script started on 2022-11-03 23:34:22-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="101" LINES="55"]
+[?2004h]0;garrett@ijn-yamato: /media/garrett/Storage/Projects/networksProject[01;32mgarrett@ijn-yamato[00m:[01;34m/media/garrett/Storage/Projects/networksProject[00m$ ./server
+[?2004lReady
+Waiting for request
+Generated Checksum: 45252
+Generated Packet Number: 1
+Generated Checksum: 39891
+Generated Packet Number: 2
+Generated Checksum: 35408
+Generated Packet Number: 3
+Generated Checksum: 44338
+Generated Packet Number: 4
+Generated Checksum: 45740
+Generated Packet Number: 5
+Generated Checksum: 45416
+Generated Packet Number: 6
+Generated Checksum: 46475
+Generated Packet Number: 7
+Generated Checksum: 45861
+Generated Packet Number: 8
+Generated Checksum: 45473
+Generated Packet Number: 9
+Generated Checksum: 44923
+Generated Packet Number: 10
+Generated Checksum: 45226
+Generated Packet Number: 11
+Generated Checksum: 45574
+Generated Packet Number: 12
+Generated Checksum: 45663
+Generated Packet Number: 13
+Generated Checksum: 45990
+Generated Packet Number: 14
+Generated Checksum: 45242
+Generated Packet Number: 15
+Generated Checksum: 45106
+Generated Packet Number: 16
+Generated Checksum: 41472
+Generated Packet Number: 17
+Generated Checksum: 44735
+Generated Packet Number: 18
+Generated Checksum: 45328
+Generated Packet Number: 19
+Generated Checksum: 44761
+Generated Packet Number: 20
+Generated Checksum: 45952
+Generated Packet Number: 21
+Generated Checksum: 45603
+Generated Packet Number: 22
+Generated Checksum: 45937
+Generated Packet Number: 23
+Generated Checksum: 45967
+Generated Packet Number: 24
+Generated Checksum: 45656
+Generated Packet Number: 25
+Generated Checksum: 45793
+Generated Packet Number: 26
+Generated Checksum: 44209
+Generated Packet Number: 27
+Generated Checksum: 45811
+Generated Packet Number: 28
+Generated Checksum: 45480
+Generated Packet Number: 29
+Generated Checksum: 43965
+Generated Packet Number: 30
+Generated Checksum: 44958
+Generated Packet Number: 31
+Generated Checksum: 41804
+Generated Packet Number: 32
+Generated Checksum: 45498
+Generated Packet Number: 33
+Generated Checksum: 45721
+Generated Packet Number: 34
+Generated Checksum: 45113
+Generated Packet Number: 35
+Generated Checksum: 42542
+Generated Packet Number: 36
+Generated Checksum: 45238
+Generated Packet Number: 37
+Generated Checksum: 45490
+Generated Packet Number: 38
+Generated Checksum: 45466
+Generated Packet Number: 39
+Generated Checksum: 44573
+Generated Packet Number: 40
+Generated Checksum: 41667
+Generated Packet Number: 41
+Generated Checksum: 45541
+Generated Packet Number: 42
+Generated Checksum: 45471
+Generated Packet Number: 43
+Generated Checksum: 45495
+Generated Packet Number: 44
+Generated Checksum: 45380
+Generated Packet Number: 45
+Generated Checksum: 40827
+Generated Packet Number: 46
+Generated Checksum: 42000
+Generated Packet Number: 47
+Generated Checksum: 43503
+Generated Packet Number: 48
+Generated Checksum: 45518
+Generated Packet Number: 49
+Generated Checksum: 45999
+Generated Packet Number: 50
+Generated Checksum: 42850
+Generated Packet Number: 51
+Generated Checksum: 45875
+Generated Packet Number: 52
+Generated Checksum: 46138
+Generated Packet Number: 53
+Generated Checksum: 44436
+Generated Packet Number: 54
+Generated Checksum: 44329
+Generated Packet Number: 55
+Generated Checksum: 46147
+Generated Packet Number: 56
+Generated Checksum: 42795
+Generated Packet Number: 57
+Generated Checksum: 43791
+Generated Packet Number: 58
+Generated Checksum: 45756
+Generated Packet Number: 59
+Generated Checksum: 46682
+Generated Packet Number: 60
+Generated Checksum: 43040
+Generated Packet Number: 61
+Generated Checksum: 45970
+Generated Packet Number: 62
+Generated Checksum: 45591
+Generated Packet Number: 63
+Generated Checksum: 42770
+Generated Packet Number: 64
+Generated Checksum: 44771
+Generated Packet Number: 65
+Generated Checksum: 45355
+Generated Packet Number: 66
+Generated Checksum: 44506
+Generated Packet Number: 67
+Generated Checksum: 45862
+Generated Packet Number: 68
+Generated Checksum: 46347
+Generated Packet Number: 69
+Generated Checksum: 45740
+Generated Packet Number: 70
+Generated Checksum: 45078
+Generated Packet Number: 71
+Generated Checksum: 46344
+Generated Packet Number: 72
+Generated Checksum: 45111
+Generated Packet Number: 73
+Generated Checksum: 45794
+Generated Packet Number: 74
+Generated Checksum: 45907
+Generated Packet Number: 75
+Generated Checksum: 46513
+Generated Packet Number: 76
+Generated Checksum: 44397
+Generated Packet Number: 77
+Generated Checksum: 45811
+Generated Packet Number: 78
+Generated Checksum: 44861
+Generated Packet Number: 79
+Generated Checksum: 44527
+Generated Packet Number: 80
+Generated Checksum: 45330
+Generated Packet Number: 81
+Generated Checksum: 45686
+Generated Packet Number: 82
+Generated Checksum: 44926
+Generated Packet Number: 83
+Generated Checksum: 45155
+Generated Packet Number: 84
+Generated Checksum: 44711
+Generated Packet Number: 85
+Generated Checksum: 44045
+Generated Packet Number: 86
+Generated Checksum: 43267
+Generated Packet Number: 87
+Generated Checksum: 46567
+Generated Packet Number: 88
+Generated Checksum: 45259
+Generated Packet Number: 89
+Generated Checksum: 45225
+Generated Packet Number: 90
+Generated Checksum: 45347
+Generated Packet Number: 91
+Generated Checksum: 45674
+Generated Packet Number: 92
+Generated Checksum: 46336
+Generated Packet Number: 93
+Generated Checksum: 46330
+Generated Packet Number: 94
+Generated Checksum: 45541
+Generated Packet Number: 95
+Generated Checksum: 45535
+Generated Packet Number: 96
+Generated Checksum: 45908
+Generated Packet Number: 97
+Generated Checksum: 45613
+Generated Packet Number: 98
+Generated Checksum: 44938
+Generated Packet Number: 99
+Generated Checksum: 45328
+Generated Packet Number: 100
+Generated Checksum: 45732
+Generated Packet Number: 101
+Generated Checksum: 46279
+Generated Packet Number: 102
+Generated Checksum: 45638
+Generated Packet Number: 103
+Generated Checksum: 45510
+Generated Packet Number: 104
+Generated Checksum: 44321
+Generated Packet Number: 105
+Generated Checksum: 46182
+Generated Packet Number: 106
+Generated Checksum: 46255
+Generated Packet Number: 107
+Generated Checksum: 45944
+Generated Packet Number: 108
+Generated Checksum: 45822
+Generated Packet Number: 109
+Generated Checksum: 45668
+Generated Packet Number: 110
+Generated Checksum: 46446
+Generated Packet Number: 111
+Generated Checksum: 45875
+Generated Packet Number: 112
+Generated Checksum: 44861
+Generated Packet Number: 113
+Generated Checksum: 45341
+Generated Packet Number: 114
+Generated Checksum: 46119
+Generated Packet Number: 115
+Generated Checksum: 43628
+Generated Packet Number: 116
+Generated Checksum: 45261
+Generated Packet Number: 117
+Generated Checksum: 44919
+Generated Packet Number: 118
+Generated Checksum: 45670
+Generated Packet Number: 119
+Generated Checksum: 44749
+Generated Packet Number: 120
+Generated Checksum: 45458
+Generated Packet Number: 121
+Generated Checksum: 45328
+Generated Packet Number: 122
+Generated Checksum: 43495
+Generated Packet Number: 123
+Generated Checksum: 44586
+Generated Packet Number: 124
+Generated Checksum: 45269
+Generated Packet Number: 125
+Generated Checksum: 45711
+Generated Packet Number: 126
+Generated Checksum: 43554
+Generated Packet Number: 127
+Generated Checksum: 43702
+Generated Packet Number: 128
+Generated Checksum: 45409
+Generated Packet Number: 129
+Generated Checksum: 45644
+Generated Packet Number: 130
+Generated Checksum: 45920
+Generated Packet Number: 131
+Generated Checksum: 46292
+Generated Packet Number: 132
+Generated Checksum: 45486
+Generated Packet Number: 133
+Generated Checksum: 46000
+Generated Packet Number: 134
+Generated Checksum: 44784
+Generated Packet Number: 135
+Generated Checksum: 46203
+Generated Packet Number: 136
+Generated Checksum: 43618
+Generated Packet Number: 137
+Generated Checksum: 43505
+Generated Packet Number: 138
+Generated Checksum: 45768
+Generated Packet Number: 139
+Generated Checksum: 45414
+Generated Packet Number: 140
+Generated Checksum: 46331
+Generated Packet Number: 141
+Generated Checksum: 43790
+Generated Packet Number: 142
+Generated Checksum: 45174
+Generated Packet Number: 143
+Generated Checksum: 44392
+Generated Packet Number: 144
+Generated Checksum: 45663
+Generated Packet Number: 145
+Generated Checksum: 45769
+Generated Packet Number: 146
+Generated Checksum: 45844
+Generated Packet Number: 147
+Generated Checksum: 46442
+Generated Packet Number: 148
+Generated Checksum: 46262
+Generated Packet Number: 149
+Generated Checksum: 46136
+Generated Packet Number: 150
+Generated Checksum: 46459
+Generated Packet Number: 151
+Generated Checksum: 45631
+Generated Packet Number: 152
+Generated Checksum: 44843
+Generated Packet Number: 153
+Generated Checksum: 45618
+Generated Packet Number: 154
+Generated Checksum: 46066
+Generated Packet Number: 155
+Generated Checksum: 45416
+Generated Packet Number: 156
+Generated Checksum: 45265
+Generated Packet Number: 157
+Generated Checksum: 45648
+Generated Packet Number: 158
+Generated Checksum: 45824
+Generated Packet Number: 159
+Generated Checksum: 46396
+Generated Packet Number: 160
+Generated Checksum: 45792
+Generated Packet Number: 161
+Generated Checksum: 45788
+Generated Packet Number: 162
+Generated Checksum: 45861
+Generated Packet Number: 163
+Generated Checksum: 45909
+Generated Packet Number: 164
+Generated Checksum: 45917
+Generated Packet Number: 165
+Generated Checksum: 46076
+Generated Packet Number: 166
+Generated Checksum: 45172
+Generated Packet Number: 167
+Generated Checksum: 44850
+Generated Packet Number: 168
+Generated Checksum: 45857
+Generated Packet Number: 169
+Generated Checksum: 46222
+Generated Packet Number: 170
+Generated Checksum: 44777
+Generated Packet Number: 171
+Generated Checksum: 45400
+Generated Packet Number: 172
+Generated Checksum: 44459
+Generated Packet Number: 173
+Generated Checksum: 45248
+Generated Packet Number: 174
+Generated Checksum: 45931
+Generated Packet Number: 175
+Generated Checksum: 45557
+Generated Packet Number: 176
+Generated Checksum: 45072
+Generated Packet Number: 177
+Generated Checksum: 44912
+Generated Packet Number: 178
+Generated Checksum: 44574
+Generated Packet Number: 179
+Generated Checksum: 45592
+Generated Packet Number: 180
+Generated Checksum: 45268
+Generated Packet Number: 181
+Generated Checksum: 45572
+Generated Packet Number: 182
+Generated Checksum: 44528
+Generated Packet Number: 183
+Generated Checksum: 42570
+Generated Packet Number: 184
+Generated Checksum: 42827
+Generated Packet Number: 185
+Generated Checksum: 44469
+Generated Packet Number: 186
+Generated Checksum: 43091
+Generated Packet Number: 187
+Generated Checksum: 41425
+Generated Packet Number: 188
+Generated Checksum: 44200
+Generated Packet Number: 189
+Generated Checksum: 45097
+Generated Packet Number: 190
+Generated Checksum: 45255
+Generated Packet Number: 191
+Generated Checksum: 43176
+Generated Packet Number: 192
+Generated Checksum: 41232
+Generated Packet Number: 193
+Generated Checksum: 44811
+Generated Packet Number: 194
+Generated Checksum: 45578
+Generated Packet Number: 195
+Generated Checksum: 46115
+Generated Packet Number: 196
+Generated Checksum: 43780
+Generated Packet Number: 197
+Generated Checksum: 41703
+Generated Packet Number: 198
+Generated Checksum: 42538
+Generated Packet Number: 199
+Generated Checksum: 41497
+Generated Packet Number: 200
+Generated Checksum: 46413
+Generated Packet Number: 201
+Generated Checksum: 44069
+Generated Packet Number: 202
+Generated Checksum: 45301
+Generated Packet Number: 203
+Generated Checksum: 44516
+Generated Packet Number: 204
+Generated Checksum: 45415
+Generated Packet Number: 205
+Generated Checksum: 46264
+Generated Packet Number: 206
+Generated Checksum: 44430
+Generated Packet Number: 207
+Generated Checksum: 45824
+Generated Packet Number: 208
+Generated Checksum: 44553
+Generated Packet Number: 209
+Generated Checksum: 45851
+Generated Packet Number: 210
+Generated Checksum: 45551
+Generated Packet Number: 211
+Generated Checksum: 44588
+Generated Packet Number: 212
+Generated Checksum: 44640
+Generated Packet Number: 213
+Generated Checksum: 45205
+Generated Packet Number: 214
+Generated Checksum: 38304
+Generated Packet Number: 215
+Generated Checksum: 45220
+Generated Packet Number: 216
+Generated Checksum: 45797
+Generated Packet Number: 217
+Generated Checksum: 45143
+Generated Packet Number: 218
+Generated Checksum: 45611
+Generated Packet Number: 219
+Generated Checksum: 45846
+Generated Packet Number: 220
+Generated Checksum: 41116
+Generated Packet Number: 221
+Generated Checksum: 45008
+Generated Packet Number: 222
+Generated Checksum: 45467
+Generated Packet Number: 223
+Generated Checksum: 46164
+Generated Packet Number: 224
+Generated Checksum: 45024
+Generated Packet Number: 225
+Generated Checksum: 45664
+Generated Packet Number: 226
+Generated Checksum: 45811
+Generated Packet Number: 227
+Generated Checksum: 45846
+Generated Packet Number: 228
+Generated Checksum: 45738
+Generated Packet Number: 229
+Generated Checksum: 46414
+Generated Packet Number: 230
+Generated Checksum: 42512
+Generated Packet Number: 231
+Generated Checksum: 45167
+Generated Packet Number: 232
+Generated Checksum: 42462
+Generated Packet Number: 233
+Generated Checksum: 45356
+Generated Packet Number: 234
+Generated Checksum: 44693
+Generated Packet Number: 235
+Generated Checksum: 44447
+Generated Packet Number: 236
+Generated Checksum: 43657
+Generated Packet Number: 237
+Generated Checksum: 43940
+Generated Packet Number: 238
+Generated Checksum: 41437
+Generated Packet Number: 239
+Generated Checksum: 41885
+Generated Packet Number: 240
+Generated Checksum: 40921
+Generated Packet Number: 241
+Generated Checksum: 44117
+Generated Packet Number: 242
+Generated Checksum: 45633
+Generated Packet Number: 243
+Generated Checksum: 45541
+Generated Packet Number: 244
+Generated Checksum: 43263
+Generated Packet Number: 245
+Generated Checksum: 44887
+Generated Packet Number: 246
+Generated Checksum: 44668
+Generated Packet Number: 247
+Generated Checksum: 44638
+Generated Packet Number: 248
+Generated Checksum: 45114
+Generated Packet Number: 249
+Generated Checksum: 45720
+Generated Packet Number: 250
+Generated Checksum: 43102
+Generated Packet Number: 251
+Generated Checksum: 44928
+Generated Packet Number: 252
+Generated Checksum: 45362
+Generated Packet Number: 253
+Generated Checksum: 45230
+Generated Packet Number: 254
+Generated Checksum: 44713
+Generated Packet Number: 255
+Generated Checksum: 44015
+Generated Packet Number: 256
+Generated Checksum: 45518
+Generated Packet Number: 257
+Generated Checksum: 44366
+Generated Packet Number: 258
+Generated Checksum: 44402
+Generated Packet Number: 259
+Generated Checksum: 43489
+Generated Packet Number: 260
+Generated Checksum: 43886
+Generated Packet Number: 261
+Generated Checksum: 41074
+Generated Packet Number: 262
+Generated Checksum: 42352
+Generated Packet Number: 263
+Generated Checksum: 43218
+Generated Packet Number: 264
+Generated Checksum: 45529
+Generated Packet Number: 265
+Generated Checksum: 44373
+Generated Packet Number: 266
+Generated Checksum: 39522
+Generated Packet Number: 267
+Generated Checksum: 44889
+Generated Packet Number: 268
+Generated Checksum: 44175
+Generated Packet Number: 269
+Generated Checksum: 44611
+Generated Packet Number: 270
+Generated Checksum: 39065
+Generated Packet Number: 271
+Generated Checksum: 43228
+Generated Packet Number: 272
+Generated Checksum: 46190
+Generated Packet Number: 273
+Generated Checksum: 45652
+Generated Packet Number: 274
+Generated Checksum: 46117
+Generated Packet Number: 275
+Generated Checksum: 45720
+Generated Packet Number: 276
+Generated Checksum: 45338
+Generated Packet Number: 277
+Generated Checksum: 45496
+Generated Packet Number: 278
+Generated Checksum: 43356
+Generated Packet Number: 279
+Generated Checksum: 44067
+Generated Packet Number: 280
+Generated Checksum: 45649
+Generated Packet Number: 281
+Generated Checksum: 43887
+Generated Packet Number: 282
+Generated Checksum: 44524
+Generated Packet Number: 283
+Generated Checksum: 44194
+Generated Packet Number: 284
+Generated Checksum: 44582
+Generated Packet Number: 285
+Generated Checksum: 45076
+Generated Packet Number: 286
+Generated Checksum: 44215
+Generated Packet Number: 287
+Generated Checksum: 45340
+Generated Packet Number: 288
+Generated Checksum: 45698
+Generated Packet Number: 289
+Generated Checksum: 45241
+Generated Packet Number: 290
+Generated Checksum: 42662
+Generated Packet Number: 291
+Generated Checksum: 40856
+Generated Packet Number: 292
+Generated Checksum: 41620
+Generated Packet Number: 293
+Generated Checksum: 41743
+Generated Packet Number: 294
+Generated Checksum: 42811
+Generated Packet Number: 295
+Generated Checksum: 43614
+Generated Packet Number: 296
+Generated Checksum: 43828
+Generated Packet Number: 297
+Generated Checksum: 43386
+Generated Packet Number: 298
+Generated Checksum: 41749
+Generated Packet Number: 299
+Generated Checksum: 43148
+Generated Packet Number: 300
+Generated Checksum: 42428
+Generated Packet Number: 301
+Generated Checksum: 44822
+Generated Packet Number: 302
+Generated Checksum: 42909
+Generated Packet Number: 303
+Generated Checksum: 44732
+Generated Packet Number: 304
+Generated Checksum: 44759
+Generated Packet Number: 305
+Generated Checksum: 45275
+Generated Packet Number: 306
+Generated Checksum: 44803
+Generated Packet Number: 307
+Generated Checksum: 45319
+Generated Packet Number: 308
+Generated Checksum: 45746
+Generated Packet Number: 309
+Generated Checksum: 44515
+Generated Packet Number: 310
+Generated Checksum: 42707
+Generated Packet Number: 311
+Generated Checksum: 45103
+Generated Packet Number: 312
+Generated Checksum: 45090
+Generated Packet Number: 313
+Generated Checksum: 44602
+Generated Packet Number: 314
+Generated Checksum: 45541
+Generated Packet Number: 315
+Generated Checksum: 45710
+Generated Packet Number: 316
+Generated Checksum: 44729
+Generated Packet Number: 317
+Generated Checksum: 44157
+Generated Packet Number: 318
+Generated Checksum: 45126
+Generated Packet Number: 319
+Generated Checksum: 45057
+Generated Packet Number: 320
+Generated Checksum: 45323
+Generated Packet Number: 321
+Generated Checksum: 43984
+Generated Packet Number: 322
+Generated Checksum: 44181
+Generated Packet Number: 323
+Generated Checksum: 45161
+Generated Packet Number: 324
+Generated Checksum: 45900
+Generated Packet Number: 325
+Generated Checksum: 45370
+Generated Packet Number: 326
+Generated Checksum: 45120
+Generated Packet Number: 327
+Generated Checksum: 45544
+Generated Packet Number: 328
+Generated Checksum: 45743
+Generated Packet Number: 329
+Generated Checksum: 45668
+Generated Packet Number: 330
+Generated Checksum: 44186
+Generated Packet Number: 331
+Generated Checksum: 44107
+Generated Packet Number: 332
+Generated Checksum: 46032
+Generated Packet Number: 333
+Generated Checksum: 45985
+Generated Packet Number: 334
+Generated Checksum: 44685
+Generated Packet Number: 335
+Generated Checksum: 45899
+Generated Packet Number: 336
+Generated Checksum: 45311
+Generated Packet Number: 337
+Generated Checksum: 46548
+Generated Packet Number: 338
+Generated Checksum: 46194
+Generated Packet Number: 339
+Generated Checksum: 45292
+Generated Packet Number: 340
+Generated Checksum: 41008
+Generated Packet Number: 341
+Generated Checksum: 45608
+Generated Packet Number: 342
+Generated Checksum: 45402
+Generated Packet Number: 343
+Generated Checksum: 43839
+Generated Packet Number: 344
+Generated Checksum: 46181
+Generated Packet Number: 345
+Generated Checksum: 40473
+Generated Packet Number: 346
+Generated Checksum: 45276
+Generated Packet Number: 347
+Generated Checksum: 42201
+Generated Packet Number: 348
+Generated Checksum: 45018
+Generated Packet Number: 349
+Generated Checksum: 43223
+Generated Packet Number: 350
+Generated Checksum: 44020
+Generated Packet Number: 351
+Generated Checksum: 44662
+Generated Packet Number: 352
+Generated Checksum: 45166
+Generated Packet Number: 353
+Generated Checksum: 42642
+Generated Packet Number: 354
+Generated Checksum: 42362
+Generated Packet Number: 355
+Generated Checksum: 45742
+Generated Packet Number: 356
+Generated Checksum: 44339
+Generated Packet Number: 357
+Generated Checksum: 45143
+Generated Packet Number: 358
+Generated Checksum: 43680
+Generated Packet Number: 359
+Generated Checksum: 44989
+Generated Packet Number: 360
+Generated Checksum: 45047
+Generated Packet Number: 361
+Generated Checksum: 43508
+Generated Packet Number: 362
+Generated Checksum: 44760
+Generated Packet Number: 363
+Generated Checksum: 44901
+Generated Packet Number: 364
+Generated Checksum: 46207
+Generated Packet Number: 365
+Generated Checksum: 44891
+Generated Packet Number: 366
+Generated Checksum: 44134
+Generated Packet Number: 367
+Generated Checksum: 45268
+Generated Packet Number: 368
+Generated Checksum: 44449
+Generated Packet Number: 369
+Generated Checksum: 44499
+Generated Packet Number: 370
+Generated Checksum: 45691
+Generated Packet Number: 371
+Generated Checksum: 44633
+Generated Packet Number: 372
+Generated Checksum: 45187
+Generated Packet Number: 373
+Generated Checksum: 44049
+Generated Packet Number: 374
+Generated Checksum: 44329
+Generated Packet Number: 375
+Generated Checksum: 45229
+Generated Packet Number: 376
+Generated Checksum: 45303
+Generated Packet Number: 377
+Generated Checksum: 44218
+Generated Packet Number: 378
+Generated Checksum: 44271
+Generated Packet Number: 379
+Generated Checksum: 44967
+Generated Packet Number: 380
+Generated Checksum: 45375
+Generated Packet Number: 381
+Generated Checksum: 45326
+Generated Packet Number: 382
+Generated Checksum: 44811
+Generated Packet Number: 383
+Generated Checksum: 45285
+Generated Packet Number: 384
+Generated Checksum: 45587
+Generated Packet Number: 385
+Generated Checksum: 44721
+Generated Packet Number: 386
+Generated Checksum: 44570
+Generated Packet Number: 387
+Generated Checksum: 45783
+Generated Packet Number: 388
+Generated Checksum: 45150
+Generated Packet Number: 389
+Generated Checksum: 45678
+Generated Packet Number: 390
+Generated Checksum: 41847
+Generated Packet Number: 391
+Generated Checksum: 44858
+Generated Packet Number: 392
+Generated Checksum: 46787
+Generated Packet Number: 393
+Generated Checksum: 44870
+Generated Packet Number: 394
+Generated Checksum: 45091
+Generated Packet Number: 395
+Generated Checksum: 45824
+Generated Packet Number: 396
+Generated Checksum: 44771
+Generated Packet Number: 397
+Generated Checksum: 44866
+Generated Packet Number: 398
+Generated Checksum: 45354
+Generated Packet Number: 399
+Generated Checksum: 46145
+Generated Packet Number: 400
+Generated Checksum: 45301
+Generated Packet Number: 401
+Generated Checksum: 44895
+Generated Packet Number: 402
+Generated Checksum: 46133
+Generated Packet Number: 403
+Generated Checksum: 45636
+Generated Packet Number: 404
+Generated Checksum: 45589
+Generated Packet Number: 405
+Generated Checksum: 44751
+Generated Packet Number: 406
+Generated Checksum: 45424
+Generated Packet Number: 407
+Generated Checksum: 44242
+Generated Packet Number: 408
+Generated Checksum: 44576
+Generated Packet Number: 409
+Generated Checksum: 44674
+Generated Packet Number: 410
+Generated Checksum: 45389
+Generated Packet Number: 411
+Generated Checksum: 44887
+Generated Packet Number: 412
+Generated Checksum: 45413
+Generated Packet Number: 413
+Generated Checksum: 45642
+Generated Packet Number: 414
+Generated Checksum: 43203
+Generated Packet Number: 415
+Generated Checksum: 43904
+Generated Packet Number: 416
+Generated Checksum: 43747
+Generated Packet Number: 417
+Generated Checksum: 45108
+Generated Packet Number: 418
+Generated Checksum: 45160
+Generated Packet Number: 419
+Generated Checksum: 44148
+Generated Packet Number: 420
+Generated Checksum: 46471
+Generated Packet Number: 421
+Generated Checksum: 45897
+Generated Packet Number: 422
+Generated Checksum: 43897
+Generated Packet Number: 423
+Generated Checksum: 44108
+Generated Packet Number: 424
+Generated Checksum: 44879
+Generated Packet Number: 425
+Generated Checksum: 45174
+Generated Packet Number: 426
+Generated Checksum: 45581
+Generated Packet Number: 427
+Generated Checksum: 43490
+Generated Packet Number: 428
+Generated Checksum: 45407
+Generated Packet Number: 429
+Generated Checksum: 44856
+Generated Packet Number: 430
+Generated Checksum: 44955
+Generated Packet Number: 431
+Generated Checksum: 45432
+Generated Packet Number: 432
+Generated Checksum: 45273
+Generated Packet Number: 433
+Generated Checksum: 44305
+Generated Packet Number: 434
+Generated Checksum: 44157
+Generated Packet Number: 435
+Generated Checksum: 44825
+Generated Packet Number: 436
+Generated Checksum: 44825
+Generated Packet Number: 437
+Generated Checksum: 44764
+Generated Packet Number: 438
+Generated Checksum: 42450
+Generated Packet Number: 439
+Generated Checksum: 45572
+Generated Packet Number: 440
+Generated Checksum: 44751
+Generated Packet Number: 441
+Generated Checksum: 45262
+Generated Packet Number: 442
+Generated Checksum: 46182
+Generated Packet Number: 443
+Generated Checksum: 45380
+Generated Packet Number: 444
+Generated Checksum: 44349
+Generated Packet Number: 445
+Generated Checksum: 44343
+Generated Packet Number: 446
+Generated Checksum: 45751
+Generated Packet Number: 447
+Generated Checksum: 45206
+Generated Packet Number: 448
+Generated Checksum: 45255
+Generated Packet Number: 449
+Generated Checksum: 45929
+Generated Packet Number: 450
+Generated Checksum: 44750
+Generated Packet Number: 451
+Generated Checksum: 44966
+Generated Packet Number: 452
+Generated Checksum: 45623
+Generated Packet Number: 453
+Generated Checksum: 44206
+Generated Packet Number: 454
+Generated Checksum: 44910
+Generated Packet Number: 455
+Generated Checksum: 45259
+Generated Packet Number: 456
+Generated Checksum: 44714
+Generated Packet Number: 457
+Generated Checksum: 44719
+Generated Packet Number: 458
+Generated Checksum: 44892
+Generated Packet Number: 459
+Generated Checksum: 43127
+Generated Packet Number: 460
+Generated Checksum: 44499
+Generated Packet Number: 461
+Generated Checksum: 45622
+Generated Packet Number: 462
+Generated Checksum: 45779
+Generated Packet Number: 463
+Generated Checksum: 46040
+Generated Packet Number: 464
+Generated Checksum: 45122
+Generated Packet Number: 465
+Generated Checksum: 43040
+Generated Packet Number: 466
+Generated Checksum: 45684
+Generated Packet Number: 467
+Generated Checksum: 45676
+Generated Packet Number: 468
+Generated Checksum: 45313
+Generated Packet Number: 469
+Generated Checksum: 45197
+Generated Packet Number: 470
+Generated Checksum: 45096
+Generated Packet Number: 471
+Generated Checksum: 46224
+Generated Packet Number: 472
+Generated Checksum: 44410
+Generated Packet Number: 473
+Generated Checksum: 44673
+Generated Packet Number: 474
+Generated Checksum: 46518
+Generated Packet Number: 475
+Generated Checksum: 44883
+Generated Packet Number: 476
+Generated Checksum: 45149
+Generated Packet Number: 477
+Generated Checksum: 44291
+Generated Packet Number: 478
+Generated Checksum: 45320
+Generated Packet Number: 479
+Generated Checksum: 46129
+Generated Packet Number: 480
+Generated Checksum: 45261
+Generated Packet Number: 481
+Generated Checksum: 45399
+Generated Packet Number: 482
+Generated Checksum: 44748
+Generated Packet Number: 483
+Generated Checksum: 44840
+Generated Packet Number: 484
+Generated Checksum: 36442
+Generated Packet Number: 485
+Generated Checksum: 40958
+Generated Packet Number: 486
+Generated Checksum: 39460
+Generated Packet Number: 487
+Generated Checksum: 40921
+Generated Packet Number: 488
+Generated Checksum: 42196
+Generated Packet Number: 489
+Generated Checksum: 39902
+Generated Packet Number: 490
+Generated Checksum: 41854
+Generated Packet Number: 491
+Generated Checksum: 41796
+Generated Packet Number: 492
+Generated Checksum: 43040
+Generated Packet Number: 493
+Generated Checksum: 40616
+Generated Packet Number: 494
+Generated Checksum: 42896
+Generated Packet Number: 495
+Generated Checksum: 45051
+Generated Packet Number: 496
+Generated Checksum: 45266
+Generated Packet Number: 497
+Generated Checksum: 45108
+Generated Packet Number: 498
+Generated Checksum: 44407
+Generated Packet Number: 499
+Generated Checksum: 45527
+Generated Packet Number: 500
+Generated Checksum: 42971
+Generated Packet Number: 501
+Generated Checksum: 45285
+Generated Packet Number: 502
+Generated Checksum: 44484
+Generated Packet Number: 503
+Generated Checksum: 41643
+Generated Packet Number: 504
+Generated Checksum: 43065
+Generated Packet Number: 505
+Generated Checksum: 45034
+Generated Packet Number: 506
+Generated Checksum: 45380
+Generated Packet Number: 507
+Generated Checksum: 44938
+Generated Packet Number: 508
+Generated Checksum: 44092
+Generated Packet Number: 509
+Generated Checksum: 44948
+Generated Packet Number: 510
+Generated Checksum: 45217
+Generated Packet Number: 511
+Generated Checksum: 44836
+Generated Packet Number: 512
+Generated Checksum: 44403
+Generated Packet Number: 513
+Generated Checksum: 45212
+Generated Packet Number: 514
+Generated Checksum: 45550
+Generated Packet Number: 515
+Generated Checksum: 44740
+Generated Packet Number: 516
+Generated Checksum: 45806
+Generated Packet Number: 517
+Generated Checksum: 44094
+Generated Packet Number: 518
+Generated Checksum: 44598
+Generated Packet Number: 519
+Generated Checksum: 44338
+Generated Packet Number: 520
+Generated Checksum: 44000
+Generated Packet Number: 521
+Generated Checksum: 45131
+Generated Packet Number: 522
+Generated Checksum: 43060
+Generated Packet Number: 523
+Generated Checksum: 34834
+Generated Packet Number: 524
+Generated Checksum: 41634
+Generated Packet Number: 525
+Generated Checksum: 45495
+Generated Packet Number: 526
+Generated Checksum: 44165
+Generated Packet Number: 527
+Generated Checksum: 42903
+Generated Packet Number: 528
+Generated Checksum: 44248
+Generated Packet Number: 529
+Generated Checksum: 44996
+Generated Packet Number: 530
+Generated Checksum: 44074
+Generated Packet Number: 531
+Generated Checksum: 41455
+Generated Packet Number: 532
+Generated Checksum: 42853
+Generated Packet Number: 533
+Generated Checksum: 45364
+Generated Packet Number: 534
+Generated Checksum: 45036
+Generated Packet Number: 535
+Generated Checksum: 43681
+Generated Packet Number: 536
+Generated Checksum: 44655
+Generated Packet Number: 537
+Generated Checksum: 43759
+Generated Packet Number: 538
+Generated Checksum: 45016
+Generated Packet Number: 539
+Generated Checksum: 43399
+Generated Packet Number: 540
+Generated Checksum: 44265
+Generated Packet Number: 541
+Generated Checksum: 44444
+Generated Packet Number: 542
+Generated Checksum: 42162
+Generated Packet Number: 543
+Generated Checksum: 44782
+Generated Packet Number: 544
+Generated Checksum: 46335
+Generated Packet Number: 545
+Generated Checksum: 42362
+Generated Packet Number: 546
+Generated Checksum: 44530
+Generated Packet Number: 547
+Generated Checksum: 45218
+Generated Packet Number: 548
+Generated Checksum: 44816
+Generated Packet Number: 549
+Generated Checksum: 44350
+Generated Packet Number: 550
+Generated Checksum: 43456
+Generated Packet Number: 551
+Generated Checksum: 44349
+Generated Packet Number: 552
+Generated Checksum: 45977
+Generated Packet Number: 553
+Generated Checksum: 45975
+Generated Packet Number: 554
+Generated Checksum: 44414
+Generated Packet Number: 555
+Generated Checksum: 43627
+Generated Packet Number: 556
+Generated Checksum: 46199
+Generated Packet Number: 557
+Generated Checksum: 43725
+Generated Packet Number: 558
+Generated Checksum: 46025
+Generated Packet Number: 559
+Generated Checksum: 45280
+Generated Packet Number: 560
+Generated Checksum: 45376
+Generated Packet Number: 561
+Generated Checksum: 46550
+Generated Packet Number: 562
+Generated Checksum: 45792
+Generated Packet Number: 563
+Generated Checksum: 45282
+Generated Packet Number: 564
+Generated Checksum: 45691
+Generated Packet Number: 565
+Generated Checksum: 45888
+Generated Packet Number: 566
+Generated Checksum: 44808
+Generated Packet Number: 567
+Generated Checksum: 45409
+Generated Packet Number: 568
+Generated Checksum: 46241
+Generated Packet Number: 569
+Generated Checksum: 44490
+Generated Packet Number: 570
+Generated Checksum: 45507
+Generated Packet Number: 571
+Generated Checksum: 45073
+Generated Packet Number: 572
+Generated Checksum: 43365
+Generated Packet Number: 573
+Generated Checksum: 45415
+Generated Packet Number: 574
+Generated Checksum: 46510
+Generated Packet Number: 575
+Generated Checksum: 44887
+Generated Packet Number: 576
+Generated Checksum: 44327
+Generated Packet Number: 577
+Generated Checksum: 45480
+Generated Packet Number: 578
+Generated Checksum: 45873
+Generated Packet Number: 579
+Generated Checksum: 44518
+Generated Packet Number: 580
+Generated Checksum: 41591
+Generated Packet Number: 581
+Generated Checksum: 41991
+Generated Packet Number: 582
+Generated Checksum: 45454
+Generated Packet Number: 583
+Generated Checksum: 44831
+Generated Packet Number: 584
+Generated Checksum: 44147
+Generated Packet Number: 585
+Generated Checksum: 46351
+Generated Packet Number: 586
+Generated Checksum: 45243
+Generated Packet Number: 587
+Generated Checksum: 45873
+Generated Packet Number: 588
+Generated Checksum: 45735
+Generated Packet Number: 589
+Generated Checksum: 45748
+Generated Packet Number: 590
+Generated Checksum: 46146
+Generated Packet Number: 591
+Generated Checksum: 45269
+Generated Packet Number: 592
+Generated Checksum: 45261
+Generated Packet Number: 593
+Generated Checksum: 46042
+Generated Packet Number: 594
+Generated Checksum: 45955
+Generated Packet Number: 595
+Generated Checksum: 45320
+Generated Packet Number: 596
+Generated Checksum: 46831
+Generated Packet Number: 597
+Generated Checksum: 45111
+Generated Packet Number: 598
+Generated Checksum: 46220
+Generated Packet Number: 599
+Generated Checksum: 46202
+Generated Packet Number: 600
+Generated Checksum: 42973
+Generated Packet Number: 601
+Generated Checksum: 44980
+Generated Packet Number: 602
+Generated Checksum: 45910
+Generated Packet Number: 603
+Generated Checksum: 45209
+Generated Packet Number: 604
+Generated Checksum: 43631
+Generated Packet Number: 605
+Generated Checksum: 43297
+Generated Packet Number: 606
+Generated Checksum: 41854
+Generated Packet Number: 607
+Generated Checksum: 45591
+Generated Packet Number: 608
+Generated Checksum: 45520
+Generated Packet Number: 609
+Generated Checksum: 45957
+Generated Packet Number: 610
+Generated Checksum: 45503
+Generated Packet Number: 611
+Generated Checksum: 45239
+Generated Packet Number: 612
+Generated Checksum: 45690
+Generated Packet Number: 613
+Generated Checksum: 45523
+Generated Packet Number: 614
+Generated Checksum: 44488
+Generated Packet Number: 615
+Generated Checksum: 45647
+Generated Packet Number: 616
+Generated Checksum: 45744
+Generated Packet Number: 617
+Generated Checksum: 44950
+Generated Packet Number: 618
+Generated Checksum: 45569
+Generated Packet Number: 619
+Generated Checksum: 44313
+Generated Packet Number: 620
+Generated Checksum: 45491
+Generated Packet Number: 621
+Generated Checksum: 45749
+Generated Packet Number: 622
+Generated Checksum: 45028
+Generated Packet Number: 623
+Generated Checksum: 44564
+Generated Packet Number: 624
+Generated Checksum: 43026
+Generated Packet Number: 625
+Generated Checksum: 42530
+Generated Packet Number: 626
+Generated Checksum: 43446
+Generated Packet Number: 627
+Generated Checksum: 43587
+Generated Packet Number: 628
+Generated Checksum: 41270
+Generated Packet Number: 629
+Generated Checksum: 45632
+Generated Packet Number: 630
+Generated Checksum: 43551
+Generated Packet Number: 631
+Generated Checksum: 44652
+Generated Packet Number: 632
+Generated Checksum: 44380
+Generated Packet Number: 633
+Generated Checksum: 44690
+Generated Packet Number: 634
+Generated Checksum: 45607
+Generated Packet Number: 635
+Generated Checksum: 44893
+Generated Packet Number: 636
+Generated Checksum: 45404
+Generated Packet Number: 637
+Generated Checksum: 45443
+Generated Packet Number: 638
+Generated Checksum: 44912
+Generated Packet Number: 639
+Generated Checksum: 45236
+Generated Packet Number: 640
+Generated Checksum: 45615
+Generated Packet Number: 641
+Generated Checksum: 44988
+Generated Packet Number: 642
+Generated Checksum: 45679
+Generated Packet Number: 643
+Generated Checksum: 45950
+Generated Packet Number: 644
+Generated Checksum: 42400
+Generated Packet Number: 645
+Generated Checksum: 44692
+Generated Packet Number: 646
+Generated Checksum: 45863
+Generated Packet Number: 647
+Generated Checksum: 45288
+Generated Packet Number: 648
+Generated Checksum: 41294
+Generated Packet Number: 649
+Generated Checksum: 41099
+Generated Packet Number: 650
+Generated Checksum: 43796
+Generated Packet Number: 651
+Generated Checksum: 41718
+Generated Packet Number: 652
+Generated Checksum: 45851
+Generated Packet Number: 653
+Generated Checksum: 44072
+Generated Packet Number: 654
+Generated Checksum: 44788
+Generated Packet Number: 655
+Generated Checksum: 45622
+Generated Packet Number: 656
+Generated Checksum: 45115
+Generated Packet Number: 657
+Generated Checksum: 44062
+Generated Packet Number: 658
+Generated Checksum: 44891
+Generated Packet Number: 659
+Generated Checksum: 44359
+Generated Packet Number: 660
+Generated Checksum: 45413
+Generated Packet Number: 661
+Generated Checksum: 45573
+Generated Packet Number: 662
+Generated Checksum: 43672
+Generated Packet Number: 663
+Generated Checksum: 45328
+Generated Packet Number: 664
+Generated Checksum: 45303
+Generated Packet Number: 665
+Generated Checksum: 45759
+Generated Packet Number: 666
+Generated Checksum: 45466
+Generated Packet Number: 667
+Generated Checksum: 40217
+Generated Packet Number: 668
+Generated Checksum: 43474
+Generated Packet Number: 669
+Generated Checksum: 45695
+Generated Packet Number: 670
+Generated Checksum: 44821
+Generated Packet Number: 671
+Generated Checksum: 44779
+Generated Packet Number: 672
+Generated Checksum: 43751
+Generated Packet Number: 673
+Generated Checksum: 42629
+Generated Packet Number: 674
+Generated Checksum: 44059
+Generated Packet Number: 675
+Generated Checksum: 45366
+Generated Packet Number: 676
+Generated Checksum: 42580
+Generated Packet Number: 677
+Generated Checksum: 41323
+Generated Packet Number: 678
+Generated Checksum: 41735
+Generated Packet Number: 679
+Generated Checksum: 43401
+Generated Packet Number: 680
+Generated Checksum: 43051
+Generated Packet Number: 681
+Generated Checksum: 43023
+Generated Packet Number: 682
+Generated Checksum: 45216
+Generated Packet Number: 683
+Generated Checksum: 45669
+Generated Packet Number: 684
+Generated Checksum: 45551
+Generated Packet Number: 685
+Generated Checksum: 45249
+Generated Packet Number: 686
+Generated Checksum: 45307
+Generated Packet Number: 687
+Generated Checksum: 45315
+Generated Packet Number: 688
+Generated Checksum: 45995
+Generated Packet Number: 689
+Generated Checksum: 44594
+Generated Packet Number: 690
+Generated Checksum: 45075
+Generated Packet Number: 691
+Generated Checksum: 44959
+Generated Packet Number: 692
+Generated Checksum: 45144
+Generated Packet Number: 693
+Generated Checksum: 45654
+Generated Packet Number: 694
+Generated Checksum: 44610
+Generated Packet Number: 695
+Generated Checksum: 44857
+Generated Packet Number: 696
+Generated Checksum: 45420
+Generated Packet Number: 697
+Generated Checksum: 40906
+Generated Packet Number: 698
+Generated Checksum: 45922
+Generated Packet Number: 699
+Generated Checksum: 45780
+Generated Packet Number: 700
+Generated Checksum: 42533
+Generated Packet Number: 701
+Generated Checksum: 44747
+Generated Packet Number: 702
+Generated Checksum: 45642
+Generated Packet Number: 703
+Generated Checksum: 43788
+Generated Packet Number: 704
+Generated Checksum: 45242
+Generated Packet Number: 705
+Generated Checksum: 44878
+Generated Packet Number: 706
+Generated Checksum: 44776
+Generated Packet Number: 707
+Generated Checksum: 46257
+Generated Packet Number: 708
+Generated Checksum: 45865
+Generated Packet Number: 709
+Generated Checksum: 44777
+Generated Packet Number: 710
+Generated Checksum: 40066
+Generated Packet Number: 711
+Generated Checksum: 44737
+Generated Packet Number: 712
+Generated Checksum: 44749
+Generated Packet Number: 713
+Generated Checksum: 45626
+Generated Packet Number: 714
+Generated Checksum: 42668
+Generated Packet Number: 715
+Generated Checksum: 45419
+Generated Packet Number: 716
+Generated Checksum: 44101
+Generated Packet Number: 717
+Generated Checksum: 45682
+Generated Packet Number: 718
+Generated Checksum: 45043
+Generated Packet Number: 719
+Generated Checksum: 42898
+Generated Packet Number: 720
+Generated Checksum: 43653
+Generated Packet Number: 721
+Generated Checksum: 45061
+Generated Packet Number: 722
+Generated Checksum: 45563
+Generated Packet Number: 723
+Generated Checksum: 46269
+Generated Packet Number: 724
+Generated Checksum: 45451
+Generated Packet Number: 725
+Generated Checksum: 45482
+Generated Packet Number: 726
+Generated Checksum: 46087
+Generated Packet Number: 727
+Generated Checksum: 44859
+Generated Packet Number: 728
+Generated Checksum: 45024
+Generated Packet Number: 729
+Generated Checksum: 42235
+Generated Packet Number: 730
+Generated Checksum: 45792
+Generated Packet Number: 731
+Generated Checksum: 45112
+Generated Packet Number: 732
+Generated Checksum: 45788
+Generated Packet Number: 733
+Generated Checksum: 43899
+Generated Packet Number: 734
+Generated Checksum: 45384
+Generated Packet Number: 735
+Generated Checksum: 45701
+Generated Packet Number: 736
+Generated Checksum: 40962
+Generated Packet Number: 737
+Generated Checksum: 45887
+Generated Packet Number: 738
+Generated Checksum: 45012
+Generated Packet Number: 739
+Generated Checksum: 44976
+Generated Packet Number: 740
+Generated Checksum: 44612
+Generated Packet Number: 741
+Generated Checksum: 44124
+Generated Packet Number: 742
+Generated Checksum: 44978
+Generated Packet Number: 743
+Generated Checksum: 45507
+Generated Packet Number: 744
+Generated Checksum: 45050
+Generated Packet Number: 745
+Generated Checksum: 45243
+Generated Packet Number: 746
+Generated Checksum: 45330
+Generated Packet Number: 747
+Generated Checksum: 44649
+Generated Packet Number: 748
+Generated Checksum: 45103
+Generated Packet Number: 749
+Generated Checksum: 44091
+Generated Packet Number: 750
+Generated Checksum: 45126
+Generated Packet Number: 751
+Generated Checksum: 45065
+Generated Packet Number: 752
+Generated Checksum: 44180
+Generated Packet Number: 753
+Generated Checksum: 43548
+Generated Packet Number: 754
+Generated Checksum: 42488
+Generated Packet Number: 755
+Generated Checksum: 46193
+Generated Packet Number: 756
+Generated Checksum: 44504
+Generated Packet Number: 757
+Generated Checksum: 45487
+Generated Packet Number: 758
+Generated Checksum: 42755
+Generated Packet Number: 759
+Generated Checksum: 43132
+Generated Packet Number: 760
+Generated Checksum: 44430
+Generated Packet Number: 761
+Generated Checksum: 42302
+Generated Packet Number: 762
+Generated Checksum: 44906
+Generated Packet Number: 763
+Generated Checksum: 45300
+Generated Packet Number: 764
+Generated Checksum: 45323
+Generated Packet Number: 765
+Generated Checksum: 45134
+Generated Packet Number: 766
+Generated Checksum: 44175
+Generated Packet Number: 767
+Generated Checksum: 44437
+Generated Packet Number: 768
+Generated Checksum: 45356
+Generated Packet Number: 769
+Generated Checksum: 44060
+Generated Packet Number: 770
+Generated Checksum: 44437
+Generated Packet Number: 771
+Generated Checksum: 45621
+Generated Packet Number: 772
+Generated Checksum: 44605
+Generated Packet Number: 773
+Generated Checksum: 45519
+Generated Packet Number: 774
+Generated Checksum: 44982
+Generated Packet Number: 775
+Generated Checksum: 44917
+Generated Packet Number: 776
+Generated Checksum: 44909
+Generated Packet Number: 777
+Generated Checksum: 42758
+Generated Packet Number: 778
+Generated Checksum: 44404
+Generated Packet Number: 779
+Generated Checksum: 45256
+Generated Packet Number: 780
+Generated Checksum: 45326
+Generated Packet Number: 781
+Generated Checksum: 45297
+Generated Packet Number: 782
+Generated Checksum: 44475
+Generated Packet Number: 783
+Generated Checksum: 45494
+Generated Packet Number: 784
+Generated Checksum: 45508
+Generated Packet Number: 785
+Generated Checksum: 45468
+Generated Packet Number: 786
+Generated Checksum: 45851
+Generated Packet Number: 787
+Generated Checksum: 45663
+Generated Packet Number: 788
+Generated Checksum: 44827
+Generated Packet Number: 789
+Generated Checksum: 44071
+Generated Packet Number: 790
+Generated Checksum: 45464
+Generated Packet Number: 791
+Generated Checksum: 45542
+Generated Packet Number: 792
+Generated Checksum: 45938
+Generated Packet Number: 793
+Generated Checksum: 43498
+Generated Packet Number: 794
+Generated Checksum: 44751
+Generated Packet Number: 795
+Generated Checksum: 44088
+Generated Packet Number: 796
+Generated Checksum: 46572
+Generated Packet Number: 797
+Generated Checksum: 44106
+Generated Packet Number: 798
+Generated Checksum: 43685
+Generated Packet Number: 799
+Generated Checksum: 44154
+Generated Packet Number: 800
+Generated Checksum: 46421
+Generated Packet Number: 801
+Generated Checksum: 46280
+Generated Packet Number: 802
+Generated Checksum: 44292
+Generated Packet Number: 803
+Generated Checksum: 45768
+Generated Packet Number: 804
+Generated Checksum: 45336
+Generated Packet Number: 805
+Generated Checksum: 42063
+Generated Packet Number: 806
+Generated Checksum: 46178
+Generated Packet Number: 807
+Generated Checksum: 45987
+Generated Packet Number: 808
+Generated Checksum: 43752
+Generated Packet Number: 809
+Generated Checksum: 45591
+Generated Packet Number: 810
+Generated Checksum: 45151
+Generated Packet Number: 811
+Generated Checksum: 45761
+Generated Packet Number: 812
+Generated Checksum: 45150
+Generated Packet Number: 813
+Generated Checksum: 45317
+Generated Packet Number: 814
+Generated Checksum: 44693
+Generated Packet Number: 815
+Generated Checksum: 45477
+Generated Packet Number: 816
+Generated Checksum: 44264
+Generated Packet Number: 817
+Generated Checksum: 46001
+Generated Packet Number: 818
+Generated Checksum: 45344
+Generated Packet Number: 819
+Generated Checksum: 45015
+Generated Packet Number: 820
+Generated Checksum: 45097
+Generated Packet Number: 821
+Generated Checksum: 44297
+Generated Packet Number: 822
+Generated Checksum: 45489
+Generated Packet Number: 823
+Generated Checksum: 44283
+Generated Packet Number: 824
+Generated Checksum: 40643
+Generated Packet Number: 825
+Generated Checksum: 44837
+Generated Packet Number: 826
+Generated Checksum: 44144
+Generated Packet Number: 827
+Generated Checksum: 45518
+Generated Packet Number: 828
+Generated Checksum: 46325
+Generated Packet Number: 829
+Generated Checksum: 44429
+Generated Packet Number: 830
+Generated Checksum: 44907
+Generated Packet Number: 831
+Generated Checksum: 44553
+Generated Packet Number: 832
+Generated Checksum: 44992
+Generated Packet Number: 833
+Generated Checksum: 44569
+Generated Packet Number: 834
+Generated Checksum: 45895
+Generated Packet Number: 835
+Generated Checksum: 43391
+Generated Packet Number: 836
+Generated Checksum: 45242
+Generated Packet Number: 837
+Generated Checksum: 41189
+Generated Packet Number: 838
+Generated Checksum: 44744
+Generated Packet Number: 839
+Generated Checksum: 45485
+Generated Packet Number: 840
+Generated Checksum: 45202
+Generated Packet Number: 841
+Generated Checksum: 44577
+Generated Packet Number: 842
+Generated Checksum: 42397
+Generated Packet Number: 843
+Generated Checksum: 44008
+Generated Packet Number: 844
+Generated Checksum: 45929
+Generated Packet Number: 845
+Generated Checksum: 44874
+Generated Packet Number: 846
+Generated Checksum: 45051
+Generated Packet Number: 847
+Generated Checksum: 44519
+Generated Packet Number: 848
+Generated Checksum: 45377
+Generated Packet Number: 849
+Generated Checksum: 44556
+Generated Packet Number: 850
+Generated Checksum: 45499
+Generated Packet Number: 851
+Generated Checksum: 45292
+Generated Packet Number: 852
+Generated Checksum: 44553
+Generated Packet Number: 853
+Generated Checksum: 43757
+Generated Packet Number: 854
+Generated Checksum: 41069
+Generated Packet Number: 855
+Generated Checksum: 45065
+Generated Packet Number: 856
+Generated Checksum: 45935
+Generated Packet Number: 857
+Generated Checksum: 43036
+Generated Packet Number: 858
+Generated Checksum: 45617
+Generated Packet Number: 859
+Generated Checksum: 45854
+Generated Packet Number: 860
+Generated Checksum: 44864
+Generated Packet Number: 861
+Generated Checksum: 45531
+Generated Packet Number: 862
+Generated Checksum: 46538
+Generated Packet Number: 863
+Generated Checksum: 45778
+Generated Packet Number: 864
+Generated Checksum: 45962
+Generated Packet Number: 865
+Generated Checksum: 45331
+Generated Packet Number: 866
+Generated Checksum: 44856
+Generated Packet Number: 867
+Generated Checksum: 45080
+Generated Packet Number: 868
+Generated Checksum: 45685
+Generated Packet Number: 869
+Generated Checksum: 45641
+Generated Packet Number: 870
+Generated Checksum: 45174
+Generated Packet Number: 871
+Generated Checksum: 44165
+Generated Packet Number: 872
+Generated Checksum: 45372
+Generated Packet Number: 873
+Generated Checksum: 44634
+Generated Packet Number: 874
+Generated Checksum: 43742
+Generated Packet Number: 875
+Generated Checksum: 45518
+Generated Packet Number: 876
+Generated Checksum: 46130
+Generated Packet Number: 877
+Generated Checksum: 42670
+Generated Packet Number: 878
+Generated Checksum: 35550
+Generated Packet Number: 879
+Generated Checksum: 46558
+Generated Packet Number: 880
+Generated Checksum: 41182
+Generated Packet Number: 881
+Generated Checksum: 46064
+Generated Packet Number: 882
+Generated Checksum: 46807
+Generated Packet Number: 883
+Generated Checksum: 45600
+Generated Packet Number: 884
+Generated Checksum: 46757
+Generated Packet Number: 885
+Generated Checksum: 45002
+Generated Packet Number: 886
+Generated Checksum: 43802
+Generated Packet Number: 887
+Generated Checksum: 46516
+Generated Packet Number: 888
+Generated Checksum: 46328
+Generated Packet Number: 889
+Generated Checksum: 46612
+Generated Packet Number: 890
+Generated Checksum: 46020
+Generated Packet Number: 891
+Generated Checksum: 45823
+Generated Packet Number: 892
+Generated Checksum: 12787
+Generated Packet Number: 893
+Waiting for request
+^C
+[?2004h]0;garrett@ijn-yamato: /media/garrett/Storage/Projects/networksProject[01;32mgarrett@ijn-yamato[00m:[01;34m/media/garrett/Storage/Projects/networksProject[00m$ exit
+[?2004lexit
+
+Script done on 2022-11-03 23:35:16-05:00 [COMMAND_EXIT_CODE="130"]
