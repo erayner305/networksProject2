@@ -30,9 +30,13 @@ char ERR_INSTR[4] = "ERR";
 
 std::string input_packet_loss_rate;
 std::string input_packet_damage_rate;
+std::string input_packet_delay_rate;
+std::string input_packet_delay_time;
 
 float packet_loss_rate;
 float packet_damage_rate;
+float packet_delay_rate;
+float packet_delay_time;
 
 // gremlins
 // 
@@ -91,6 +95,14 @@ int main() {
     std::cout << "Enter packet damage chance: " << std::flush;
     std::getline(std::cin, input_packet_damage_rate);
     packet_damage_rate = std::stof(input_packet_damage_rate);
+
+    std::cout << "Enter packet delay chance: " << std::flush;
+    std::getline(std::cin, input_packet_delay_rate);
+    packet_delay_rate = std::stof(input_packet_delay_rate);
+
+    std::cout << "Enter packet delay time in microseconds: " << std::flush;
+    std::getline(std::cin, input_packet_delay_time);
+    packet_delay_time = std::stoi(input_packet_delay_time);
 
     std::cout << "Ready" << std::endl;
 
