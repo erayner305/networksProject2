@@ -23,10 +23,12 @@ int INSTRUCTION_SIZE = 3;
 int HEADER_SIZE = TERMINATOR_BYTE + CHECKSUM_SIZE + PACKET_COUNT_SIZE;
 int DATA_SIZE = SEGMENT_SIZE - HEADER_SIZE;
 
+int MAX_WINDOW_SIZE = 32;
+
 char TERM_OKAY = '1';
 char GET_INSTR[4] = "GET";
 char ACK_INSTR[4] = "ACK";
-char ERR_INSTR[4] = "ERR";
+char NAK_INSTR[4] = "NAK";
 
 std::string input_packet_loss_rate;
 std::string input_packet_damage_rate;
@@ -88,6 +90,14 @@ int main() {
     socklen_t client_size = sizeof(client_addr);
     client_fd = accept(sd, (struct sockaddr *)&client_addr, &client_size);
 
+    struct timeval gbn_tv;
+    struct timeval request_tv;
+
+    // Specify our timeout of 15 ms for the socket connection
+    gbn_tv.tv_sec, request_tv.tv_sec, request_tv.tv_usec = 0;
+    gbn_tv.tv_usec = 15000;
+    setsockopt(sd, SOL_SOCKET, SO_RCVTIMEO, &request_tv, sizeof(request_tv));
+
     std::cout << "Enter packet loss chance: " << std::flush;
     std::getline(std::cin, input_packet_loss_rate);
     packet_loss_rate = std::stof(input_packet_loss_rate);
@@ -105,6 +115,7 @@ int main() {
     packet_delay_time = std::stoi(input_packet_delay_time);
 
     std::cout << "Ready" << std::endl;
+
 
 
     // Integer to keep track of our packet counts
@@ -165,6 +176,10 @@ int main() {
                 // Send an ACK packet to the client
                 sendto(sd, ACK_INSTR, 4, 0, (struct sockaddr*)&server, sizeof(server));
 
+                int unack_count = 0;
+
+                setsockopt(sd, SOL_SOCKET, SO_RCVTIMEO, &gbn_tv, sizeof(gbn_tv));
+
                 // File requested exists, send all of the packets for the file
                 while(!file_in.eof()){
                     empty_buffer(packet, SEGMENT_SIZE);
@@ -172,6 +187,8 @@ int main() {
                     empty_buffer(checksum_buffer, CHECKSUM_SIZE);
 
                     file_in.read(data_buffer, DATA_SIZE);
+
+                    std::cout << "[Info] Generating packet..." << std::endl;
 
                     // Generate our checksum using our buffer
                     generate_checksum(data_buffer, checksum_buffer);
@@ -182,16 +199,77 @@ int main() {
                     std::memcpy(packet+TERMINATOR_BYTE+CHECKSUM_SIZE, &packet_count_buffer, PACKET_COUNT_SIZE);
                     std::memcpy(packet+HEADER_SIZE, &data_buffer, DATA_SIZE);
 
-                    int packet_status = gremlins(data_buffer, packet_damage_rate, packet_loss_rate, packet_delay_rate)
+                    int packet_status = gremlins(data_buffer, packet_damage_rate, packet_loss_rate, packet_delay_rate);
 
-                    if(packet_status != 1) {
+                    if (packet_status != 1) {
+
                         if (packet_status == 2) {
-                            usleep(packet_delay_time)
+                            // Delay the packet being sent
+                            usleep(packet_delay_time);
                         }
+
+
                         // Send packet to client
                         sendto(sd, packet, SEGMENT_SIZE, 0, (struct sockaddr *)&server, sizeof(server));
+
+                        std::cout << "[Info] Successfully sent packet " << packet_count << std::endl;
+
+
+                        // Wait for a response from the client, either an ACK or NAK
+                        char response_msg_buffer[5];
+                        int n = recvfrom(sd, response_msg_buffer, SEGMENT_SIZE, 0, (struct sockaddr *)&server, &serverLen);
+
+
+                        // Check if we received any data
+                        if (n > 0) {
+                            
+                            // Get the response type the received
+                            char response_type_buffer[4];
+                            std::memcpy(response_type_buffer, response_msg_buffer+1, 4);
+
+                            // Get the packet num requested
+                            int packet_num_requested = (int)response_msg_buffer[0];
+
+
+                            if (strcmp(response_type_buffer, ACK_INSTR) == 0) {
+                                // Got an ACK response, everything's good
+                                std::cout << "[Info] Received a ACK response type" << std::endl;
+                                std::cout << "\tRequested packet #: " << packet_num_requested << std::endl;
+
+                                // Decrement our missed packet count
+                                unack_count = (unack_count > 0) ? unack_count-1 : 0;
+                            }
+
+                            else if (strcmp(response_type_buffer, NAK_INSTR) == 0) {
+                                // Got a NAK response, resend what it requests
+                                std::cout << "[Error] Received a NAK response type" << std::endl;
+                                std::cout << "\tRequested packet #: " << packet_num_requested << std::endl;
+
+                                // TODO: send...
+                            }
+
+                            else {
+                                // Unsupported response
+                                std::cout << "[Error] Received an unknown response type!" << std::endl;
+                            }
+
+                        } else {
+                            // We timed out, and did not recieve a response from the client
+                            std::cout << "[Info] Timeout reached, incrementing unack_count..." << std::endl;
+                            unack_count += 1;
+
+                            // TODO: Increase window...
+
+                        }
+
+                    } else {
+                        // Gremlin, packet was not sent
+                        std::cout << "[Gremlin] Dropped packet " << packet_count << std::endl;
                     }
                     
+                    // Clear our timeout value so we are waiting for the next request
+                    setsockopt(sd, SOL_SOCKET, SO_RCVTIMEO, &request_tv, sizeof(request_tv));
+
                     // Sleep in the event of packet overflow
                     usleep(100);
                 }
@@ -201,9 +279,9 @@ int main() {
 
             } else {
 
-                // Packet does not exist, send an ERR packet to the client
+                // File does not exist, send a NAK packet to the client
                 std::cout << "[Error] Received request for file " << target_filename << " that does not exist" << std::endl;
-                sendto(sd, ERR_INSTR, 4, 0, (struct sockaddr*)&server, sizeof(server));
+                sendto(sd, NAK_INSTR, 4, 0, (struct sockaddr*)&server, sizeof(server));
 
             }
 
@@ -240,7 +318,7 @@ void empty_buffer(char buffer[], int size) {
 //  Given a uint32_t packet number, return the value in a provided char[4] buffer
 //
 void generate_packet_num(uint32_t packet_num, char packet_num_buffer[]) {
-    std::cout << "Generated Packet Number: " << packet_num << std::endl;
+    std::cout << "\tGenerated Packet Number: " << packet_num << std::endl;
     memcpy(packet_num_buffer, &packet_num, sizeof(packet_num));
 }
 
@@ -255,7 +333,7 @@ void generate_checksum(char data_buffer[], char checksum_buffer[]) {
         if (data_buffer[i] == '\0') break;
         sum += data_buffer[i];
     }
-    std::cout << "Generated Checksum: " << sum << std::endl;
+    std::cout << "\tGenerated Checksum: " << sum << std::endl;
     memcpy(checksum_buffer, &sum, sizeof(sum));
 }
 
@@ -284,7 +362,7 @@ int gremlins(char buffer[], double corruptionChance, double lossChance, double d
         return returnValue;
     }
     else if ((double) rand()/RAND_MAX < delayChance){ //Checks for delay of packet
-        returnValue = 2
+        returnValue = 2;
     }
 
     if ((double) rand()/RAND_MAX < corruptionChance) { //Checks for corruption of packet

@@ -89,7 +89,7 @@ int main(int argc, char **argv) {
         std::getline(std::cin, input_filename);
 
         char packet[SEGMENT_SIZE];
-        int total_packets_received = -1;
+        int total_packets_received = 0;
         
         //populate "packet" with GET and the file name
         strcpy(packet, GET_INSTR);
@@ -120,16 +120,14 @@ int main(int argc, char **argv) {
             for (;;) {
                 // Get packet data
                 n = recvfrom(sd, message_buffer, SEGMENT_SIZE, 0, (struct sockaddr*)&server, &serAddrLen);
+                std::cout << "[Info] Got " << n << " bytes in Response..." << std::endl;
 
-                // int packet_status = gremlins(message_buffer, packet_damage_rate, packet_loss_rate);
-                // if(packet_status != 1) {
-
-                std::cout << "[Info] Got " << n << " bytes in response" << std::endl;
 
                 // If the first byte of our buffer is \0, break out of our loop for receiving packets
                 if (message_buffer[0] == '\0') {
                     break;
                 }
+
 
                 // Determine the checksum and packet number values
                 std::memcpy(packet_checksum_buff, &message_buffer[1], 4);
@@ -141,24 +139,30 @@ int main(int argc, char **argv) {
                 std::cout << "[Info] Got packet number: " << packet_number << std::endl;
                 std::cout << "[Info] Got packet checksum: " << packet_checksum << std::endl;
 
-                // Determine if the incoming packet number is the correct packet
-                if (packet_number == (total_packets_received + 1)) {
-                    std::cout << "[Info] Packet was in sequence!"<< std::endl;
-                    total_packets_received += 1;
-                } else {
-                    std::cout << "[Error] Packet was not in sequence!";
-                    std::cout << "\tGot sequence number " << packet_number << std::endl;
-                    std::cout << "\tExpected " << total_packets_received+1 << std::endl;
 
-                    // Send NACK
-                    std::cout << "\tSending NAK Response" << std::endl;
+                total_packets_received++;
+
+
+                // Determine if the incoming packet number is in the correct packet sequence
+                if (packet_number == (total_packets_received)) {
+                    std::cout << "[Info] Packet was in sequence!"<< std::endl;
+                } else {
+                    std::cout << "[Error] Packet was not in sequence!" << std::endl;
+                    std::cout << "\tGot sequence number " << packet_number << std::endl;
+                    std::cout << "\tExpected " << total_packets_received << std::endl;
+
+                    // Send ACK
+                    std::cout << "\tSending ACK Response..." << std::endl;
+                    std::cout << "\tRequesting Packet #: " << total_packets_received + 1 << std::endl;
                     char nack_packet[5];
                     nack_packet[0] = (uint8_t)(total_packets_received + 1);
                     std::memcpy(nack_packet + 1, NAK_INSTR, 4);
                     sendto(sd, nack_packet, 5, 0, (struct sockaddr*)&server, sizeof(server));
 
+                    // Drop the Packet
                     continue;
                 }
+
 
                 // Get the raw file data from the message buffer
                 std::memcpy(file_data_buffer, &message_buffer[9], 503);
@@ -179,47 +183,44 @@ int main(int argc, char **argv) {
                     std::cout << "\tExpected: " << packet_checksum << std::endl;
 
                     // Send NACK
-                    std::cout << "\tSending NAK Response" << std::endl;
+                    std::cout << "\tSending NAK Response..." << std::endl;
+                    std::cout << "\tRequesting Packet #: " << total_packets_received + 1 << std::endl;
                     char nack_packet[5];
                     nack_packet[0] = (uint8_t)(total_packets_received + 1);
                     std::memcpy(nack_packet + 1, NAK_INSTR, 4);
                     sendto(sd, nack_packet, 5, 0, (struct sockaddr*)&server, sizeof(server));
 
+                    // Drop the packet
+                    continue;
                 } else {
                     std::cout << "[Info] Packet contents OK" << std::endl;
                 }
+
 
                 // Generate our packet tuple from the incoming packet
                 std::vector<char> file_buffer_vector(newBuf, newBuf + len);
                 std::tuple<uint32_t, std::vector<char>> packet_tuple (packet_number, file_buffer_vector);
 
+
                 // Append the packet tuple to our vector of file data
                 file_data_vector.push_back(packet_tuple);
+
 
                 // Clear all our buffers
                 empty_buffer(message_buffer, 4);
                 empty_buffer(packet_calculated_checksum_buff, 4);
                 empty_buffer(packet_checksum_buff, 4);
                 empty_buffer(packet_number_buff, 4);
-                
+
 
                 // Send ACK Response
-                std::cout << "\tSending ACK Response" << std::endl;
+                std::cout << "\tSending ACK Response..." << std::endl;
+                std::cout << "\tRequesting Packet #: " << total_packets_received + 1 << std::endl;
                 char ack_packet[5];
-                ack_packet[0] = (uint8_t)(total_packets_received);
+                ack_packet[0] = (uint8_t)(total_packets_received + 1);
                 std::memcpy(ack_packet + 1, ACK_INSTR, 4);
                 sendto(sd, ack_packet, 5, 0, (struct sockaddr*)&server, sizeof(server));
 
-                // } else {
-                //     // Packet chance passed, drop our packet
-                //     std::cout << "Packet Dropped!" << std::endl;
-                    
-                //     // Send NACK
-                //     char nack_packet[5];
-                //     nack_packet[0] = (uint8_t)(total_packets_received + 1);
-                //     std::memcpy(nack_packet + 1, NAK_INSTR, 4);
-                //     sendto(sd, nack_packet, 5, 0, (struct sockaddr*)&server, sizeof(server));
-                // }
             }
             
             std::cout << "[Info] Terminator packet received, end of transmission" << std::endl;
