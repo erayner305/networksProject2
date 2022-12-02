@@ -89,7 +89,7 @@ int main(int argc, char **argv) {
         std::getline(std::cin, input_filename);
 
         char packet[SEGMENT_SIZE];
-        int total_packets_received = 0;
+        int expected_sequence_number = 0;
         
         //populate "packet" with GET and the file name
         strcpy(packet, GET_INSTR);
@@ -134,28 +134,27 @@ int main(int argc, char **argv) {
                 std::memcpy(packet_number_buff, &message_buffer[5], 4);
 
                 uint32_t packet_number = buffToUint32(packet_number_buff);
+                int packet_sequence_number = packet_number % 64;
+
                 uint32_t packet_checksum = buffToUint32(packet_checksum_buff); 
 
-                std::cout << "[Info] Got packet number: " << packet_number << std::endl;
+                std::cout << "[Info] Got packet sequence number: " << packet_sequence_number << std::endl;
                 std::cout << "[Info] Got packet checksum: " << packet_checksum << std::endl;
 
 
-                total_packets_received++;
-
-
                 // Determine if the incoming packet number is in the correct packet sequence
-                if (packet_number == (total_packets_received)) {
+                if (packet_sequence_number == expected_sequence_number) {
                     std::cout << "[Info] Packet was in sequence!"<< std::endl;
                 } else {
                     std::cout << "[Error] Packet was not in sequence!" << std::endl;
-                    std::cout << "\tGot sequence number " << packet_number << std::endl;
-                    std::cout << "\tExpected " << total_packets_received << std::endl;
+                    std::cout << "\tGot sequence number " << packet_sequence_number << std::endl;
+                    std::cout << "\tExpected " << expected_sequence_number << std::endl;
 
                     // Send ACK
-                    std::cout << "\tSending ACK Response..." << std::endl;
-                    std::cout << "\tRequesting Packet #: " << total_packets_received + 1 << std::endl;
+                    std::cout << "\tSending NAK Response..." << std::endl;
+                    std::cout << "\tRequesting Packet #: " << expected_sequence_number << std::endl;
                     char nack_packet[5];
-                    nack_packet[0] = (uint8_t)(total_packets_received + 1);
+                    nack_packet[0] = (uint8_t)(expected_sequence_number);
                     std::memcpy(nack_packet + 1, NAK_INSTR, 4);
                     sendto(sd, nack_packet, 5, 0, (struct sockaddr*)&server, sizeof(server));
 
@@ -184,9 +183,9 @@ int main(int argc, char **argv) {
 
                     // Send NACK
                     std::cout << "\tSending NAK Response..." << std::endl;
-                    std::cout << "\tRequesting Packet #: " << total_packets_received + 1 << std::endl;
+                    std::cout << "\tRequesting Packet #: " << expected_sequence_number << std::endl;
                     char nack_packet[5];
-                    nack_packet[0] = (uint8_t)(total_packets_received + 1);
+                    nack_packet[0] = (uint8_t)expected_sequence_number;
                     std::memcpy(nack_packet + 1, NAK_INSTR, 4);
                     sendto(sd, nack_packet, 5, 0, (struct sockaddr*)&server, sizeof(server));
 
@@ -212,12 +211,13 @@ int main(int argc, char **argv) {
                 empty_buffer(packet_checksum_buff, 4);
                 empty_buffer(packet_number_buff, 4);
 
+                expected_sequence_number = ((expected_sequence_number + 1) % 64);
 
                 // Send ACK Response
                 std::cout << "\tSending ACK Response..." << std::endl;
-                std::cout << "\tRequesting Packet #: " << total_packets_received + 1 << std::endl;
+                std::cout << "\tRequesting Packet #: " << expected_sequence_number << std::endl;
                 char ack_packet[5];
-                ack_packet[0] = (uint8_t)(total_packets_received + 1);
+                ack_packet[0] = (uint8_t)(expected_sequence_number);
                 std::memcpy(ack_packet + 1, ACK_INSTR, 4);
                 sendto(sd, ack_packet, 5, 0, (struct sockaddr*)&server, sizeof(server));
 

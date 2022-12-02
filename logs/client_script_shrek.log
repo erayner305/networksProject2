@@ -1,0 +1,1033 @@
+Script started on 2022-12-02 01:06:40-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="101" LINES="55"]
+[?2004h]0;garrett@ijn-kongou: ~/Documents/networksProject2[01;32mgarrett@ijn-kongou[00m:[01;34m~/Documents/networksProject2[00m$ ./client
+[?2004lServer IP Address: 172.19.82.246
+File name to download: test_files/shrek_2001.txt
+[Info] Server Response: NAK
+[Error] File name does not exist on server, please try again
+File name to download: test_files/shrek_2001.txt
+[Info] Server Response: ACK
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 0
+[Info] Got packet checksum: 44010
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 1
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 1
+[Info] Got packet checksum: 43779
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 2
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 2
+[Info] Got packet checksum: 41903
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 3
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 3
+[Info] Got packet checksum: 43804
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 4
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 4
+[Info] Got packet checksum: 44177
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 5
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 5
+[Info] Got packet checksum: 41360
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 6
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 6
+[Info] Got packet checksum: 41857
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 7
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 7
+[Info] Got packet checksum: 41127
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 8
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 8
+[Info] Got packet checksum: 42134
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 9
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 9
+[Info] Got packet checksum: 43279
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 10
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 10
+[Info] Got packet checksum: 44654
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 11
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 11
+[Info] Got packet checksum: 43363
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 12
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 12
+[Info] Got packet checksum: 44856
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 13
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 13
+[Info] Got packet checksum: 43581
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 14
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 14
+[Info] Got packet checksum: 41862
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 15
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 15
+[Info] Got packet checksum: 41676
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 16
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 16
+[Info] Got packet checksum: 42669
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 17
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 17
+[Info] Got packet checksum: 40716
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 18
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 18
+[Info] Got packet checksum: 40592
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 19
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 19
+[Info] Got packet checksum: 42419
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 20
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 20
+[Info] Got packet checksum: 42748
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 21
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 21
+[Info] Got packet checksum: 42257
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 22
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 22
+[Info] Got packet checksum: 43030
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 23
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 23
+[Info] Got packet checksum: 41523
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 24
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 24
+[Info] Got packet checksum: 41669
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 25
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 25
+[Info] Got packet checksum: 44050
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 26
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 26
+[Info] Got packet checksum: 42054
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 27
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 27
+[Info] Got packet checksum: 44266
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 28
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 28
+[Info] Got packet checksum: 42047
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 29
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 29
+[Info] Got packet checksum: 41173
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 30
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 30
+[Info] Got packet checksum: 42749
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 31
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 31
+[Info] Got packet checksum: 44073
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 32
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 32
+[Info] Got packet checksum: 45733
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 33
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 33
+[Info] Got packet checksum: 44080
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 34
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 34
+[Info] Got packet checksum: 42399
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 35
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 35
+[Info] Got packet checksum: 42477
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 36
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 36
+[Info] Got packet checksum: 44048
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 37
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 37
+[Info] Got packet checksum: 43614
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 38
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 38
+[Info] Got packet checksum: 43598
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 39
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 39
+[Info] Got packet checksum: 43920
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 40
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 40
+[Info] Got packet checksum: 43289
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 41
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 41
+[Info] Got packet checksum: 43039
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 42
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 42
+[Info] Got packet checksum: 43828
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 43
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 43
+[Info] Got packet checksum: 42663
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 44
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 44
+[Info] Got packet checksum: 42540
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 45
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 45
+[Info] Got packet checksum: 44831
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 46
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 46
+[Info] Got packet checksum: 43239
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 47
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 47
+[Info] Got packet checksum: 44158
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 48
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 48
+[Info] Got packet checksum: 44290
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 49
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 49
+[Info] Got packet checksum: 43278
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 50
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 50
+[Info] Got packet checksum: 44513
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 51
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 51
+[Info] Got packet checksum: 43183
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 52
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 52
+[Info] Got packet checksum: 42974
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 53
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 53
+[Info] Got packet checksum: 41259
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 54
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 54
+[Info] Got packet checksum: 40648
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 55
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 55
+[Info] Got packet checksum: 44600
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 56
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 56
+[Info] Got packet checksum: 43358
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 57
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 57
+[Info] Got packet checksum: 41204
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 58
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 58
+[Info] Got packet checksum: 44723
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 59
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 59
+[Info] Got packet checksum: 40651
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 60
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 60
+[Info] Got packet checksum: 43808
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 61
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 61
+[Info] Got packet checksum: 42701
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 62
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 62
+[Info] Got packet checksum: 43071
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 63
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 63
+[Info] Got packet checksum: 43262
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 0
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 0
+[Info] Got packet checksum: 43374
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 1
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 1
+[Info] Got packet checksum: 43736
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 2
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 2
+[Info] Got packet checksum: 44207
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 3
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 3
+[Info] Got packet checksum: 43974
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 4
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 4
+[Info] Got packet checksum: 42916
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 5
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 5
+[Info] Got packet checksum: 43988
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 6
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 6
+[Info] Got packet checksum: 44844
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 7
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 7
+[Info] Got packet checksum: 42393
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 8
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 8
+[Info] Got packet checksum: 42352
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 9
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 9
+[Info] Got packet checksum: 43204
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 10
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 10
+[Info] Got packet checksum: 41472
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 11
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 11
+[Info] Got packet checksum: 43219
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 12
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 12
+[Info] Got packet checksum: 42597
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 13
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 13
+[Info] Got packet checksum: 43988
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 14
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 14
+[Info] Got packet checksum: 44656
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 15
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 15
+[Info] Got packet checksum: 43634
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 16
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 16
+[Info] Got packet checksum: 43082
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 17
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 17
+[Info] Got packet checksum: 42035
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 18
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 18
+[Info] Got packet checksum: 44319
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 19
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 19
+[Info] Got packet checksum: 43277
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 20
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 20
+[Info] Got packet checksum: 43336
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 21
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 21
+[Info] Got packet checksum: 42661
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 22
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 22
+[Info] Got packet checksum: 43836
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 23
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 23
+[Info] Got packet checksum: 40902
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 24
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 24
+[Info] Got packet checksum: 43916
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 25
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 25
+[Info] Got packet checksum: 43605
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 26
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 26
+[Info] Got packet checksum: 42068
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 27
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 27
+[Info] Got packet checksum: 43842
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 28
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 28
+[Info] Got packet checksum: 41533
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 29
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 29
+[Info] Got packet checksum: 42362
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 30
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 30
+[Info] Got packet checksum: 41154
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 31
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 31
+[Info] Got packet checksum: 43528
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 32
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 32
+[Info] Got packet checksum: 42420
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 33
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 33
+[Info] Got packet checksum: 43251
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 34
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 34
+[Info] Got packet checksum: 42126
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 35
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 35
+[Info] Got packet checksum: 42702
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 36
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 36
+[Info] Got packet checksum: 41319
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 37
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 37
+[Info] Got packet checksum: 41911
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 38
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 38
+[Info] Got packet checksum: 42022
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 39
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 39
+[Info] Got packet checksum: 41662
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 40
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 40
+[Info] Got packet checksum: 42526
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 41
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 41
+[Info] Got packet checksum: 43173
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 42
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 42
+[Info] Got packet checksum: 41100
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 43
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 43
+[Info] Got packet checksum: 42405
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 44
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 44
+[Info] Got packet checksum: 41369
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 45
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 45
+[Info] Got packet checksum: 42546
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 46
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 46
+[Info] Got packet checksum: 40855
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 47
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 47
+[Info] Got packet checksum: 42378
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 48
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 48
+[Info] Got packet checksum: 43445
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 49
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 49
+[Info] Got packet checksum: 42973
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 50
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 50
+[Info] Got packet checksum: 42596
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 51
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 51
+[Info] Got packet checksum: 43905
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 52
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 52
+[Info] Got packet checksum: 44034
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 53
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 53
+[Info] Got packet checksum: 43055
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 54
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 54
+[Info] Got packet checksum: 43659
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 55
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 55
+[Info] Got packet checksum: 43160
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 56
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 56
+[Info] Got packet checksum: 43501
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 57
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 57
+[Info] Got packet checksum: 43423
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 58
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 58
+[Info] Got packet checksum: 42921
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 59
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 59
+[Info] Got packet checksum: 41403
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 60
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 60
+[Info] Got packet checksum: 41650
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 61
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 61
+[Info] Got packet checksum: 42459
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 62
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 62
+[Info] Got packet checksum: 43095
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 63
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 63
+[Info] Got packet checksum: 43369
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 0
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 0
+[Info] Got packet checksum: 42684
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 1
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 1
+[Info] Got packet checksum: 43082
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 2
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 2
+[Info] Got packet checksum: 43532
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 3
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 3
+[Info] Got packet checksum: 42388
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 4
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 4
+[Info] Got packet checksum: 41832
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 5
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 5
+[Info] Got packet checksum: 42209
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 6
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 6
+[Info] Got packet checksum: 39195
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 7
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 7
+[Info] Got packet checksum: 42989
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 8
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 8
+[Info] Got packet checksum: 41901
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 9
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 9
+[Info] Got packet checksum: 43863
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 10
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 10
+[Info] Got packet checksum: 42132
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 11
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 11
+[Info] Got packet checksum: 42955
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 12
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 12
+[Info] Got packet checksum: 41741
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 13
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 13
+[Info] Got packet checksum: 44674
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 14
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 14
+[Info] Got packet checksum: 43267
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 15
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 15
+[Info] Got packet checksum: 40917
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 16
+[Info] Got 512 bytes in Response...
+[Info] Got packet sequence number: 16
+[Info] Got packet checksum: 30391
+[Info] Packet was in sequence!
+[Info] Packet contents OK
+	Sending ACK Response...
+	Requesting Packet #: 17
+[Info] Got 1 bytes in Response...
+[Info] Terminator packet received, end of transmission
+[Info] Sorting recieved packet data...
+[Info] Writing file data...
+[Info] Downloaded file written to: shrek_2001.txt
+File name to download: ^C
+[?2004h]0;garrett@ijn-kongou: ~/Documents/networksProject2[01;32mgarrett@ijn-kongou[00m:[01;34m~/Documents/networksProject2[00m$ exit
+[?2004lexit
+
+Script done on 2022-12-02 01:07:32-06:00 [COMMAND_EXIT_CODE="130"]

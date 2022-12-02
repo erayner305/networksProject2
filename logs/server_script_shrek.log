@@ -1,0 +1,887 @@
+Script started on 2022-12-02 01:06:49-06:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="101" LINES="53"]
+[?2004h]0;garrett@ijn-kongou: ~/Documents/networksProject2[01;32mgarrett@ijn-kongou[00m:[01;34m~/Documents/networksProject2[00m$ ./server
+[?2004lEnter packet loss chance: 0
+Enter packet damage chance: 0
+Enter packet delay chance: 0
+Enter packet delay time in microseconds: 0
+Ready
+Waiting for request
+[Error] Received request for file test_files/shrek_2001.txt that does not exist
+Waiting for request
+[Info] Generating packets...
+	Generated Checksum: 44010
+	Generated Packet Number: 0
+[Info] Generating packets...
+	Generated Checksum: 43779
+	Generated Packet Number: 1
+[Info] Generating packets...
+	Generated Checksum: 41903
+	Generated Packet Number: 2
+[Info] Generating packets...
+	Generated Checksum: 43804
+	Generated Packet Number: 3
+[Info] Generating packets...
+	Generated Checksum: 44177
+	Generated Packet Number: 4
+[Info] Generating packets...
+	Generated Checksum: 41360
+	Generated Packet Number: 5
+[Info] Generating packets...
+	Generated Checksum: 41857
+	Generated Packet Number: 6
+[Info] Generating packets...
+	Generated Checksum: 41127
+	Generated Packet Number: 7
+[Info] Generating packets...
+	Generated Checksum: 42134
+	Generated Packet Number: 8
+[Info] Generating packets...
+	Generated Checksum: 43279
+	Generated Packet Number: 9
+[Info] Generating packets...
+	Generated Checksum: 44654
+	Generated Packet Number: 10
+[Info] Generating packets...
+	Generated Checksum: 43363
+	Generated Packet Number: 11
+[Info] Generating packets...
+	Generated Checksum: 44856
+	Generated Packet Number: 12
+[Info] Generating packets...
+	Generated Checksum: 43581
+	Generated Packet Number: 13
+[Info] Generating packets...
+	Generated Checksum: 41862
+	Generated Packet Number: 14
+[Info] Generating packets...
+	Generated Checksum: 41676
+	Generated Packet Number: 15
+[Info] Generating packets...
+	Generated Checksum: 42669
+	Generated Packet Number: 16
+[Info] Generating packets...
+	Generated Checksum: 40716
+	Generated Packet Number: 17
+[Info] Generating packets...
+	Generated Checksum: 40592
+	Generated Packet Number: 18
+[Info] Generating packets...
+	Generated Checksum: 42419
+	Generated Packet Number: 19
+[Info] Generating packets...
+	Generated Checksum: 42748
+	Generated Packet Number: 20
+[Info] Generating packets...
+	Generated Checksum: 42257
+	Generated Packet Number: 21
+[Info] Generating packets...
+	Generated Checksum: 43030
+	Generated Packet Number: 22
+[Info] Generating packets...
+	Generated Checksum: 41523
+	Generated Packet Number: 23
+[Info] Generating packets...
+	Generated Checksum: 41669
+	Generated Packet Number: 24
+[Info] Generating packets...
+	Generated Checksum: 44050
+	Generated Packet Number: 25
+[Info] Generating packets...
+	Generated Checksum: 42054
+	Generated Packet Number: 26
+[Info] Generating packets...
+	Generated Checksum: 44266
+	Generated Packet Number: 27
+[Info] Generating packets...
+	Generated Checksum: 42047
+	Generated Packet Number: 28
+[Info] Generating packets...
+	Generated Checksum: 41173
+	Generated Packet Number: 29
+[Info] Generating packets...
+	Generated Checksum: 42749
+	Generated Packet Number: 30
+[Info] Generating packets...
+	Generated Checksum: 44073
+	Generated Packet Number: 31
+[Info] Generating packets...
+	Generated Checksum: 45733
+	Generated Packet Number: 32
+[Info] Generating packets...
+	Generated Checksum: 44080
+	Generated Packet Number: 33
+[Info] Generating packets...
+	Generated Checksum: 42399
+	Generated Packet Number: 34
+[Info] Generating packets...
+	Generated Checksum: 42477
+	Generated Packet Number: 35
+[Info] Generating packets...
+	Generated Checksum: 44048
+	Generated Packet Number: 36
+[Info] Generating packets...
+	Generated Checksum: 43614
+	Generated Packet Number: 37
+[Info] Generating packets...
+	Generated Checksum: 43598
+	Generated Packet Number: 38
+[Info] Generating packets...
+	Generated Checksum: 43920
+	Generated Packet Number: 39
+[Info] Generating packets...
+	Generated Checksum: 43289
+	Generated Packet Number: 40
+[Info] Generating packets...
+	Generated Checksum: 43039
+	Generated Packet Number: 41
+[Info] Generating packets...
+	Generated Checksum: 43828
+	Generated Packet Number: 42
+[Info] Generating packets...
+	Generated Checksum: 42663
+	Generated Packet Number: 43
+[Info] Generating packets...
+	Generated Checksum: 42540
+	Generated Packet Number: 44
+[Info] Generating packets...
+	Generated Checksum: 44831
+	Generated Packet Number: 45
+[Info] Generating packets...
+	Generated Checksum: 43239
+	Generated Packet Number: 46
+[Info] Generating packets...
+	Generated Checksum: 44158
+	Generated Packet Number: 47
+[Info] Generating packets...
+	Generated Checksum: 44290
+	Generated Packet Number: 48
+[Info] Generating packets...
+	Generated Checksum: 43278
+	Generated Packet Number: 49
+[Info] Generating packets...
+	Generated Checksum: 44513
+	Generated Packet Number: 50
+[Info] Generating packets...
+	Generated Checksum: 43183
+	Generated Packet Number: 51
+[Info] Generating packets...
+	Generated Checksum: 42974
+	Generated Packet Number: 52
+[Info] Generating packets...
+	Generated Checksum: 41259
+	Generated Packet Number: 53
+[Info] Generating packets...
+	Generated Checksum: 40648
+	Generated Packet Number: 54
+[Info] Generating packets...
+	Generated Checksum: 44600
+	Generated Packet Number: 55
+[Info] Generating packets...
+	Generated Checksum: 43358
+	Generated Packet Number: 56
+[Info] Generating packets...
+	Generated Checksum: 41204
+	Generated Packet Number: 57
+[Info] Generating packets...
+	Generated Checksum: 44723
+	Generated Packet Number: 58
+[Info] Generating packets...
+	Generated Checksum: 40651
+	Generated Packet Number: 59
+[Info] Generating packets...
+	Generated Checksum: 43808
+	Generated Packet Number: 60
+[Info] Generating packets...
+	Generated Checksum: 42701
+	Generated Packet Number: 61
+[Info] Generating packets...
+	Generated Checksum: 43071
+	Generated Packet Number: 62
+[Info] Generating packets...
+	Generated Checksum: 43262
+	Generated Packet Number: 63
+[Info] Generating packets...
+	Generated Checksum: 43374
+	Generated Packet Number: 64
+[Info] Generating packets...
+	Generated Checksum: 43736
+	Generated Packet Number: 65
+[Info] Generating packets...
+	Generated Checksum: 44207
+	Generated Packet Number: 66
+[Info] Generating packets...
+	Generated Checksum: 43974
+	Generated Packet Number: 67
+[Info] Generating packets...
+	Generated Checksum: 42916
+	Generated Packet Number: 68
+[Info] Generating packets...
+	Generated Checksum: 43988
+	Generated Packet Number: 69
+[Info] Generating packets...
+	Generated Checksum: 44844
+	Generated Packet Number: 70
+[Info] Generating packets...
+	Generated Checksum: 42393
+	Generated Packet Number: 71
+[Info] Generating packets...
+	Generated Checksum: 42352
+	Generated Packet Number: 72
+[Info] Generating packets...
+	Generated Checksum: 43204
+	Generated Packet Number: 73
+[Info] Generating packets...
+	Generated Checksum: 41472
+	Generated Packet Number: 74
+[Info] Generating packets...
+	Generated Checksum: 43219
+	Generated Packet Number: 75
+[Info] Generating packets...
+	Generated Checksum: 42597
+	Generated Packet Number: 76
+[Info] Generating packets...
+	Generated Checksum: 43988
+	Generated Packet Number: 77
+[Info] Generating packets...
+	Generated Checksum: 44656
+	Generated Packet Number: 78
+[Info] Generating packets...
+	Generated Checksum: 43634
+	Generated Packet Number: 79
+[Info] Generating packets...
+	Generated Checksum: 43082
+	Generated Packet Number: 80
+[Info] Generating packets...
+	Generated Checksum: 42035
+	Generated Packet Number: 81
+[Info] Generating packets...
+	Generated Checksum: 44319
+	Generated Packet Number: 82
+[Info] Generating packets...
+	Generated Checksum: 43277
+	Generated Packet Number: 83
+[Info] Generating packets...
+	Generated Checksum: 43336
+	Generated Packet Number: 84
+[Info] Generating packets...
+	Generated Checksum: 42661
+	Generated Packet Number: 85
+[Info] Generating packets...
+	Generated Checksum: 43836
+	Generated Packet Number: 86
+[Info] Generating packets...
+	Generated Checksum: 40902
+	Generated Packet Number: 87
+[Info] Generating packets...
+	Generated Checksum: 43916
+	Generated Packet Number: 88
+[Info] Generating packets...
+	Generated Checksum: 43605
+	Generated Packet Number: 89
+[Info] Generating packets...
+	Generated Checksum: 42068
+	Generated Packet Number: 90
+[Info] Generating packets...
+	Generated Checksum: 43842
+	Generated Packet Number: 91
+[Info] Generating packets...
+	Generated Checksum: 41533
+	Generated Packet Number: 92
+[Info] Generating packets...
+	Generated Checksum: 42362
+	Generated Packet Number: 93
+[Info] Generating packets...
+	Generated Checksum: 41154
+	Generated Packet Number: 94
+[Info] Generating packets...
+	Generated Checksum: 43528
+	Generated Packet Number: 95
+[Info] Generating packets...
+	Generated Checksum: 42420
+	Generated Packet Number: 96
+[Info] Generating packets...
+	Generated Checksum: 43251
+	Generated Packet Number: 97
+[Info] Generating packets...
+	Generated Checksum: 42126
+	Generated Packet Number: 98
+[Info] Generating packets...
+	Generated Checksum: 42702
+	Generated Packet Number: 99
+[Info] Generating packets...
+	Generated Checksum: 41319
+	Generated Packet Number: 100
+[Info] Generating packets...
+	Generated Checksum: 41911
+	Generated Packet Number: 101
+[Info] Generating packets...
+	Generated Checksum: 42022
+	Generated Packet Number: 102
+[Info] Generating packets...
+	Generated Checksum: 41662
+	Generated Packet Number: 103
+[Info] Generating packets...
+	Generated Checksum: 42526
+	Generated Packet Number: 104
+[Info] Generating packets...
+	Generated Checksum: 43173
+	Generated Packet Number: 105
+[Info] Generating packets...
+	Generated Checksum: 41100
+	Generated Packet Number: 106
+[Info] Generating packets...
+	Generated Checksum: 42405
+	Generated Packet Number: 107
+[Info] Generating packets...
+	Generated Checksum: 41369
+	Generated Packet Number: 108
+[Info] Generating packets...
+	Generated Checksum: 42546
+	Generated Packet Number: 109
+[Info] Generating packets...
+	Generated Checksum: 40855
+	Generated Packet Number: 110
+[Info] Generating packets...
+	Generated Checksum: 42378
+	Generated Packet Number: 111
+[Info] Generating packets...
+	Generated Checksum: 43445
+	Generated Packet Number: 112
+[Info] Generating packets...
+	Generated Checksum: 42973
+	Generated Packet Number: 113
+[Info] Generating packets...
+	Generated Checksum: 42596
+	Generated Packet Number: 114
+[Info] Generating packets...
+	Generated Checksum: 43905
+	Generated Packet Number: 115
+[Info] Generating packets...
+	Generated Checksum: 44034
+	Generated Packet Number: 116
+[Info] Generating packets...
+	Generated Checksum: 43055
+	Generated Packet Number: 117
+[Info] Generating packets...
+	Generated Checksum: 43659
+	Generated Packet Number: 118
+[Info] Generating packets...
+	Generated Checksum: 43160
+	Generated Packet Number: 119
+[Info] Generating packets...
+	Generated Checksum: 43501
+	Generated Packet Number: 120
+[Info] Generating packets...
+	Generated Checksum: 43423
+	Generated Packet Number: 121
+[Info] Generating packets...
+	Generated Checksum: 42921
+	Generated Packet Number: 122
+[Info] Generating packets...
+	Generated Checksum: 41403
+	Generated Packet Number: 123
+[Info] Generating packets...
+	Generated Checksum: 41650
+	Generated Packet Number: 124
+[Info] Generating packets...
+	Generated Checksum: 42459
+	Generated Packet Number: 125
+[Info] Generating packets...
+	Generated Checksum: 43095
+	Generated Packet Number: 126
+[Info] Generating packets...
+	Generated Checksum: 43369
+	Generated Packet Number: 127
+[Info] Generating packets...
+	Generated Checksum: 42684
+	Generated Packet Number: 128
+[Info] Generating packets...
+	Generated Checksum: 43082
+	Generated Packet Number: 129
+[Info] Generating packets...
+	Generated Checksum: 43532
+	Generated Packet Number: 130
+[Info] Generating packets...
+	Generated Checksum: 42388
+	Generated Packet Number: 131
+[Info] Generating packets...
+	Generated Checksum: 41832
+	Generated Packet Number: 132
+[Info] Generating packets...
+	Generated Checksum: 42209
+	Generated Packet Number: 133
+[Info] Generating packets...
+	Generated Checksum: 39195
+	Generated Packet Number: 134
+[Info] Generating packets...
+	Generated Checksum: 42989
+	Generated Packet Number: 135
+[Info] Generating packets...
+	Generated Checksum: 41901
+	Generated Packet Number: 136
+[Info] Generating packets...
+	Generated Checksum: 43863
+	Generated Packet Number: 137
+[Info] Generating packets...
+	Generated Checksum: 42132
+	Generated Packet Number: 138
+[Info] Generating packets...
+	Generated Checksum: 42955
+	Generated Packet Number: 139
+[Info] Generating packets...
+	Generated Checksum: 41741
+	Generated Packet Number: 140
+[Info] Generating packets...
+	Generated Checksum: 44674
+	Generated Packet Number: 141
+[Info] Generating packets...
+	Generated Checksum: 43267
+	Generated Packet Number: 142
+[Info] Generating packets...
+	Generated Checksum: 40917
+	Generated Packet Number: 143
+[Info] Generating packets...
+	Generated Checksum: 30391
+	Generated Packet Number: 144
+145
+[Info] Successfully sent packet 0
+[Info] Received an ACK response type
+	Requested packet #: 1
+[Info] Successfully sent packet 1
+[Info] Received an ACK response type
+	Requested packet #: 2
+[Info] Successfully sent packet 2
+[Info] Received an ACK response type
+	Requested packet #: 3
+[Info] Successfully sent packet 3
+[Info] Received an ACK response type
+	Requested packet #: 4
+[Info] Successfully sent packet 4
+[Info] Received an ACK response type
+	Requested packet #: 5
+[Info] Successfully sent packet 5
+[Info] Received an ACK response type
+	Requested packet #: 6
+[Info] Successfully sent packet 6
+[Info] Received an ACK response type
+	Requested packet #: 7
+[Info] Successfully sent packet 7
+[Info] Received an ACK response type
+	Requested packet #: 8
+[Info] Successfully sent packet 8
+[Info] Received an ACK response type
+	Requested packet #: 9
+[Info] Successfully sent packet 9
+[Info] Received an ACK response type
+	Requested packet #: 10
+[Info] Successfully sent packet 10
+[Info] Received an ACK response type
+	Requested packet #: 11
+[Info] Successfully sent packet 11
+[Info] Received an ACK response type
+	Requested packet #: 12
+[Info] Successfully sent packet 12
+[Info] Received an ACK response type
+	Requested packet #: 13
+[Info] Successfully sent packet 13
+[Info] Received an ACK response type
+	Requested packet #: 14
+[Info] Successfully sent packet 14
+[Info] Received an ACK response type
+	Requested packet #: 15
+[Info] Successfully sent packet 15
+[Info] Received an ACK response type
+	Requested packet #: 16
+[Info] Successfully sent packet 16
+[Info] Received an ACK response type
+	Requested packet #: 17
+[Info] Successfully sent packet 17
+[Info] Received an ACK response type
+	Requested packet #: 18
+[Info] Successfully sent packet 18
+[Info] Received an ACK response type
+	Requested packet #: 19
+[Info] Successfully sent packet 19
+[Info] Received an ACK response type
+	Requested packet #: 20
+[Info] Successfully sent packet 20
+[Info] Received an ACK response type
+	Requested packet #: 21
+[Info] Successfully sent packet 21
+[Info] Received an ACK response type
+	Requested packet #: 22
+[Info] Successfully sent packet 22
+[Info] Received an ACK response type
+	Requested packet #: 23
+[Info] Successfully sent packet 23
+[Info] Received an ACK response type
+	Requested packet #: 24
+[Info] Successfully sent packet 24
+[Info] Received an ACK response type
+	Requested packet #: 25
+[Info] Successfully sent packet 25
+[Info] Received an ACK response type
+	Requested packet #: 26
+[Info] Successfully sent packet 26
+[Info] Received an ACK response type
+	Requested packet #: 27
+[Info] Successfully sent packet 27
+[Info] Received an ACK response type
+	Requested packet #: 28
+[Info] Successfully sent packet 28
+[Info] Received an ACK response type
+	Requested packet #: 29
+[Info] Successfully sent packet 29
+[Info] Received an ACK response type
+	Requested packet #: 30
+[Info] Successfully sent packet 30
+[Info] Received an ACK response type
+	Requested packet #: 31
+[Info] Successfully sent packet 31
+[Info] Received an ACK response type
+	Requested packet #: 32
+[Info] Successfully sent packet 32
+[Info] Received an ACK response type
+	Requested packet #: 33
+[Info] Successfully sent packet 33
+[Info] Received an ACK response type
+	Requested packet #: 34
+[Info] Successfully sent packet 34
+[Info] Received an ACK response type
+	Requested packet #: 35
+[Info] Successfully sent packet 35
+[Info] Received an ACK response type
+	Requested packet #: 36
+[Info] Successfully sent packet 36
+[Info] Received an ACK response type
+	Requested packet #: 37
+[Info] Successfully sent packet 37
+[Info] Received an ACK response type
+	Requested packet #: 38
+[Info] Successfully sent packet 38
+[Info] Received an ACK response type
+	Requested packet #: 39
+[Info] Successfully sent packet 39
+[Info] Received an ACK response type
+	Requested packet #: 40
+[Info] Successfully sent packet 40
+[Info] Received an ACK response type
+	Requested packet #: 41
+[Info] Successfully sent packet 41
+[Info] Received an ACK response type
+	Requested packet #: 42
+[Info] Successfully sent packet 42
+[Info] Received an ACK response type
+	Requested packet #: 43
+[Info] Successfully sent packet 43
+[Info] Received an ACK response type
+	Requested packet #: 44
+[Info] Successfully sent packet 44
+[Info] Received an ACK response type
+	Requested packet #: 45
+[Info] Successfully sent packet 45
+[Info] Received an ACK response type
+	Requested packet #: 46
+[Info] Successfully sent packet 46
+[Info] Received an ACK response type
+	Requested packet #: 47
+[Info] Successfully sent packet 47
+[Info] Received an ACK response type
+	Requested packet #: 48
+[Info] Successfully sent packet 48
+[Info] Received an ACK response type
+	Requested packet #: 49
+[Info] Successfully sent packet 49
+[Info] Received an ACK response type
+	Requested packet #: 50
+[Info] Successfully sent packet 50
+[Info] Received an ACK response type
+	Requested packet #: 51
+[Info] Successfully sent packet 51
+[Info] Received an ACK response type
+	Requested packet #: 52
+[Info] Successfully sent packet 52
+[Info] Received an ACK response type
+	Requested packet #: 53
+[Info] Successfully sent packet 53
+[Info] Received an ACK response type
+	Requested packet #: 54
+[Info] Successfully sent packet 54
+[Info] Received an ACK response type
+	Requested packet #: 55
+[Info] Successfully sent packet 55
+[Info] Received an ACK response type
+	Requested packet #: 56
+[Info] Successfully sent packet 56
+[Info] Received an ACK response type
+	Requested packet #: 57
+[Info] Successfully sent packet 57
+[Info] Received an ACK response type
+	Requested packet #: 58
+[Info] Successfully sent packet 58
+[Info] Received an ACK response type
+	Requested packet #: 59
+[Info] Successfully sent packet 59
+[Info] Received an ACK response type
+	Requested packet #: 60
+[Info] Successfully sent packet 60
+[Info] Received an ACK response type
+	Requested packet #: 61
+[Info] Successfully sent packet 61
+[Info] Received an ACK response type
+	Requested packet #: 62
+[Info] Successfully sent packet 62
+[Info] Received an ACK response type
+	Requested packet #: 63
+[Info] Successfully sent packet 63
+[Info] Received an ACK response type
+	Requested packet #: 0
+[Info] Successfully sent packet 64
+[Info] Received an ACK response type
+	Requested packet #: 1
+[Info] Successfully sent packet 65
+[Info] Received an ACK response type
+	Requested packet #: 2
+[Info] Successfully sent packet 66
+[Info] Received an ACK response type
+	Requested packet #: 3
+[Info] Successfully sent packet 67
+[Info] Received an ACK response type
+	Requested packet #: 4
+[Info] Successfully sent packet 68
+[Info] Received an ACK response type
+	Requested packet #: 5
+[Info] Successfully sent packet 69
+[Info] Received an ACK response type
+	Requested packet #: 6
+[Info] Successfully sent packet 70
+[Info] Received an ACK response type
+	Requested packet #: 7
+[Info] Successfully sent packet 71
+[Info] Received an ACK response type
+	Requested packet #: 8
+[Info] Successfully sent packet 72
+[Info] Received an ACK response type
+	Requested packet #: 9
+[Info] Successfully sent packet 73
+[Info] Received an ACK response type
+	Requested packet #: 10
+[Info] Successfully sent packet 74
+[Info] Received an ACK response type
+	Requested packet #: 11
+[Info] Successfully sent packet 75
+[Info] Received an ACK response type
+	Requested packet #: 12
+[Info] Successfully sent packet 76
+[Info] Received an ACK response type
+	Requested packet #: 13
+[Info] Successfully sent packet 77
+[Info] Received an ACK response type
+	Requested packet #: 14
+[Info] Successfully sent packet 78
+[Info] Received an ACK response type
+	Requested packet #: 15
+[Info] Successfully sent packet 79
+[Info] Received an ACK response type
+	Requested packet #: 16
+[Info] Successfully sent packet 80
+[Info] Received an ACK response type
+	Requested packet #: 17
+[Info] Successfully sent packet 81
+[Info] Received an ACK response type
+	Requested packet #: 18
+[Info] Successfully sent packet 82
+[Info] Received an ACK response type
+	Requested packet #: 19
+[Info] Successfully sent packet 83
+[Info] Received an ACK response type
+	Requested packet #: 20
+[Info] Successfully sent packet 84
+[Info] Received an ACK response type
+	Requested packet #: 21
+[Info] Successfully sent packet 85
+[Info] Received an ACK response type
+	Requested packet #: 22
+[Info] Successfully sent packet 86
+[Info] Received an ACK response type
+	Requested packet #: 23
+[Info] Successfully sent packet 87
+[Info] Received an ACK response type
+	Requested packet #: 24
+[Info] Successfully sent packet 88
+[Info] Received an ACK response type
+	Requested packet #: 25
+[Info] Successfully sent packet 89
+[Info] Received an ACK response type
+	Requested packet #: 26
+[Info] Successfully sent packet 90
+[Info] Received an ACK response type
+	Requested packet #: 27
+[Info] Successfully sent packet 91
+[Info] Received an ACK response type
+	Requested packet #: 28
+[Info] Successfully sent packet 92
+[Info] Received an ACK response type
+	Requested packet #: 29
+[Info] Successfully sent packet 93
+[Info] Received an ACK response type
+	Requested packet #: 30
+[Info] Successfully sent packet 94
+[Info] Received an ACK response type
+	Requested packet #: 31
+[Info] Successfully sent packet 95
+[Info] Received an ACK response type
+	Requested packet #: 32
+[Info] Successfully sent packet 96
+[Info] Received an ACK response type
+	Requested packet #: 33
+[Info] Successfully sent packet 97
+[Info] Received an ACK response type
+	Requested packet #: 34
+[Info] Successfully sent packet 98
+[Info] Received an ACK response type
+	Requested packet #: 35
+[Info] Successfully sent packet 99
+[Info] Received an ACK response type
+	Requested packet #: 36
+[Info] Successfully sent packet 100
+[Info] Received an ACK response type
+	Requested packet #: 37
+[Info] Successfully sent packet 101
+[Info] Received an ACK response type
+	Requested packet #: 38
+[Info] Successfully sent packet 102
+[Info] Received an ACK response type
+	Requested packet #: 39
+[Info] Successfully sent packet 103
+[Info] Received an ACK response type
+	Requested packet #: 40
+[Info] Successfully sent packet 104
+[Info] Received an ACK response type
+	Requested packet #: 41
+[Info] Successfully sent packet 105
+[Info] Received an ACK response type
+	Requested packet #: 42
+[Info] Successfully sent packet 106
+[Info] Received an ACK response type
+	Requested packet #: 43
+[Info] Successfully sent packet 107
+[Info] Received an ACK response type
+	Requested packet #: 44
+[Info] Successfully sent packet 108
+[Info] Received an ACK response type
+	Requested packet #: 45
+[Info] Successfully sent packet 109
+[Info] Received an ACK response type
+	Requested packet #: 46
+[Info] Successfully sent packet 110
+[Info] Received an ACK response type
+	Requested packet #: 47
+[Info] Successfully sent packet 111
+[Info] Received an ACK response type
+	Requested packet #: 48
+[Info] Successfully sent packet 112
+[Info] Received an ACK response type
+	Requested packet #: 49
+[Info] Successfully sent packet 113
+[Info] Received an ACK response type
+	Requested packet #: 50
+[Info] Successfully sent packet 114
+[Info] Received an ACK response type
+	Requested packet #: 51
+[Info] Successfully sent packet 115
+[Info] Received an ACK response type
+	Requested packet #: 52
+[Info] Successfully sent packet 116
+[Info] Received an ACK response type
+	Requested packet #: 53
+[Info] Successfully sent packet 117
+[Info] Received an ACK response type
+	Requested packet #: 54
+[Info] Successfully sent packet 118
+[Info] Received an ACK response type
+	Requested packet #: 55
+[Info] Successfully sent packet 119
+[Info] Received an ACK response type
+	Requested packet #: 56
+[Info] Successfully sent packet 120
+[Info] Received an ACK response type
+	Requested packet #: 57
+[Info] Successfully sent packet 121
+[Info] Received an ACK response type
+	Requested packet #: 58
+[Info] Successfully sent packet 122
+[Info] Received an ACK response type
+	Requested packet #: 59
+[Info] Successfully sent packet 123
+[Info] Received an ACK response type
+	Requested packet #: 60
+[Info] Successfully sent packet 124
+[Info] Received an ACK response type
+	Requested packet #: 61
+[Info] Successfully sent packet 125
+[Info] Received an ACK response type
+	Requested packet #: 62
+[Info] Successfully sent packet 126
+[Info] Received an ACK response type
+	Requested packet #: 63
+[Info] Successfully sent packet 127
+[Info] Received an ACK response type
+	Requested packet #: 0
+[Info] Successfully sent packet 128
+[Info] Received an ACK response type
+	Requested packet #: 1
+[Info] Successfully sent packet 129
+[Info] Received an ACK response type
+	Requested packet #: 2
+[Info] Successfully sent packet 130
+[Info] Received an ACK response type
+	Requested packet #: 3
+[Info] Successfully sent packet 131
+[Info] Received an ACK response type
+	Requested packet #: 4
+[Info] Successfully sent packet 132
+[Info] Received an ACK response type
+	Requested packet #: 5
+[Info] Successfully sent packet 133
+[Info] Received an ACK response type
+	Requested packet #: 6
+[Info] Successfully sent packet 134
+[Info] Received an ACK response type
+	Requested packet #: 7
+[Info] Successfully sent packet 135
+[Info] Received an ACK response type
+	Requested packet #: 8
+[Info] Successfully sent packet 136
+[Info] Received an ACK response type
+	Requested packet #: 9
+[Info] Successfully sent packet 137
+[Info] Received an ACK response type
+	Requested packet #: 10
+[Info] Successfully sent packet 138
+[Info] Received an ACK response type
+	Requested packet #: 11
+[Info] Successfully sent packet 139
+[Info] Received an ACK response type
+	Requested packet #: 12
+[Info] Successfully sent packet 140
+[Info] Received an ACK response type
+	Requested packet #: 13
+[Info] Successfully sent packet 141
+[Info] Received an ACK response type
+	Requested packet #: 14
+[Info] Successfully sent packet 142
+[Info] Received an ACK response type
+	Requested packet #: 15
+[Info] Successfully sent packet 143
+[Info] Received an ACK response type
+	Requested packet #: 16
+[Info] Successfully sent packet 144
+[Info] Received an ACK response type
+	Requested packet #: 17
+Waiting for request
+^C
+[?2004h]0;garrett@ijn-kongou: ~/Documents/networksProject2[01;32mgarrett@ijn-kongou[00m:[01;34m~/Documents/networksProject2[00m$ exit
+[?2004lexit
+
+Script done on 2022-12-02 01:07:35-06:00 [COMMAND_EXIT_CODE="130"]

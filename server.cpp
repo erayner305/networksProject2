@@ -13,7 +13,9 @@
 #include <vector>
 #include <string>
 #include <cstring>
+#include <tuple>
 #include <unistd.h>
+#include <bits/stdc++.h>
 
 int SEGMENT_SIZE = 512;
 int TERMINATOR_BYTE = 1;
@@ -24,6 +26,7 @@ int HEADER_SIZE = TERMINATOR_BYTE + CHECKSUM_SIZE + PACKET_COUNT_SIZE;
 int DATA_SIZE = SEGMENT_SIZE - HEADER_SIZE;
 
 int MAX_WINDOW_SIZE = 32;
+int REQUEST_NUM_MOD_SIZE = 64;
 
 char TERM_OKAY = '1';
 char GET_INSTR[4] = "GET";
@@ -66,6 +69,14 @@ void generate_checksum(char input_buffer[], char output_buffer[]);
 //  Given a uint32_t packet number, return the value in a provided char[4] buffer
 //
 void generate_packet_num(uint32_t packet_num, char packet_num_buffer[]);
+
+
+// buffToUint32
+//
+//  Convert a char[4] buffer to an uint32_t
+//
+uint32_t buffToUint32(char* buffer);
+
 
 int main() {
 
@@ -149,12 +160,16 @@ int main() {
     std::ifstream file_in;
 
     // Vector that holds the entire file contents divided into packets
-    std::vector<std::tuple<int, std::vector<char>>> file_data_vector;
+    std::vector<std::vector<char>> file_data_vector;
 
     // Vector that holds the 
 
     // Poll infinitely for requests from the client
     while (true) {
+
+        // Clear our timeout value so we are waiting indefinitely for the next request
+        setsockopt(sd, SOL_SOCKET, SO_RCVTIMEO, &request_tv, sizeof(request_tv));
+
         std::cout << "Waiting for request" << std::endl;
 
         // Capture the recieved message bytes to the message buffer
@@ -185,53 +200,64 @@ int main() {
 
                 setsockopt(sd, SOL_SOCKET, SO_RCVTIMEO, &gbn_tv, sizeof(gbn_tv));
 
-                // Generates a vetor containing all packets from file
-                int packet_number = 0;
 
                 while(!file_in.eof()) {
                     empty_buffer(packet, SEGMENT_SIZE);
                     empty_buffer(data_buffer, DATA_SIZE);
                     empty_buffer(checksum_buffer, CHECKSUM_SIZE);
+                    empty_buffer(packet_count_buffer, PACKET_COUNT_SIZE);
 
                     file_in.read(data_buffer, DATA_SIZE);
 
-                    std::cout << "[Info] Generating packet..." << std::endl;
+                    std::cout << "[Info] Generating packets..." << std::endl;
 
                     // Generate our checksum using our buffer
                     generate_checksum(data_buffer, checksum_buffer);
-                    generate_packet_num(++packet_count, packet_count_buffer);
+                    generate_packet_num(packet_count, packet_count_buffer);
 
                     std::memcpy(packet, &TERM_OKAY, TERMINATOR_BYTE);    
                     std::memcpy(packet+TERMINATOR_BYTE, &checksum_buffer, CHECKSUM_SIZE);
                     std::memcpy(packet+TERMINATOR_BYTE+CHECKSUM_SIZE, &packet_count_buffer, PACKET_COUNT_SIZE);
                     std::memcpy(packet+HEADER_SIZE, &data_buffer, DATA_SIZE);
+                    
+                    std::vector<char> packet_char_vector(packet, packet + SEGMENT_SIZE);
+                    file_data_vector.push_back(packet_char_vector);
 
 
-                    std::vector<char> packet_input_vector(packet, packet + len);
-                    std::tuple<uint32_t, std::vector<char>> packet_tuple (packet_number, packet_input_vector);
-                    packet_number++;
+                    packet_count++;
                 }
 
 
                 // File requested exists, send all of the packets for the file
-                int loopCount = 0;
+                int packet_index = 0;
+                int packet_index_offset = 0;
 
-                while(loopCount < packet_tuple.size()) {
+                std::cout << file_data_vector.size() << std::endl;
 
-                    int packet_status = gremlins("GARRET REPLACE WITH SOME WAY TO REFERENCE THE PACKET", packet_damage_rate, packet_loss_rate, packet_delay_rate);
+                while(packet_index < file_data_vector.size()) {
 
-                    if (packet_status != 1) {
+                    std::vector<char> outgoing_packet_vector = file_data_vector[packet_index];
 
-                        if (packet_status == 2) {
+                    char outgoing_packet[SEGMENT_SIZE];
+                    std::memcpy(outgoing_packet, &outgoing_packet_vector[0], outgoing_packet_vector.size());
+
+                    int gremlin_status = gremlins(outgoing_packet, packet_damage_rate, packet_loss_rate, packet_delay_rate);
+
+                    if (gremlin_status != 1) {
+
+                        if (gremlin_status == 2) {
                             // Delay the packet being sent
                             usleep(packet_delay_time);
                         }
 
 
-                        // Send packet to client
-                        sendto(sd, packet, SEGMENT_SIZE, 0, (struct sockaddr *)&server, sizeof(server));
-
-                        std::cout << "[Info] Successfully sent packet " << packet_count << std::endl;
+                        if (unack_count > MAX_WINDOW_SIZE) {
+                            std::cout << "[Info] UNACK limit reached, not sending packets until an ACK is received! " << std::endl;
+                        } else {
+                            // Send packet to client
+                            sendto(sd, outgoing_packet, SEGMENT_SIZE, 0, (struct sockaddr *)&server, sizeof(server));
+                            std::cout << "[Info] Successfully sent packet " << packet_index << std::endl;
+                        }
 
 
                         // Wait for a response from the client, either an ACK or NAK
@@ -252,13 +278,21 @@ int main() {
 
                             if (strcmp(response_type_buffer, ACK_INSTR) == 0) {
                                 // Got an ACK response, everything's good
-                                std::cout << "[Info] Received a ACK response type" << std::endl;
+                                std::cout << "[Info] Received an ACK response type" << std::endl;
                                 std::cout << "\tRequested packet #: " << packet_num_requested << std::endl;
 
                                 // Decrement our missed packet count
                                 unack_count = (unack_count > 0) ? unack_count-1 : 0;
 
-                                // TODO: send requested packet...
+                                // Send requested packet...
+                                if (packet_num_requested == 0) {
+                                    packet_index_offset += 64;
+                                }
+
+                                packet_index = packet_num_requested + packet_index_offset;
+
+                                continue;
+
                             }
 
                             else if (strcmp(response_type_buffer, NAK_INSTR) == 0) {
@@ -266,7 +300,10 @@ int main() {
                                 std::cout << "[Error] Received a NAK response type" << std::endl;
                                 std::cout << "\tRequested packet #: " << packet_num_requested << std::endl;
 
-                                // TODO: send requested packet...
+                                // Send requested packet...
+                                packet_index = packet_num_requested + packet_index_offset;
+
+                                continue;
                             }
 
                             else {
@@ -276,26 +313,19 @@ int main() {
 
                         } else {
                             // We timed out, and did not recieve a response from the client
-                            std::cout << "[Info] Timeout reached, incrementing unack_count..." << std::endl;
-                            unack_count += 1;
-
+                            std::cout << "[Info] Timeout reached..." << std::endl;
+                            
                             // TODO: Increase window...
-
+                            unack_count = (unack_count >= MAX_WINDOW_SIZE) ? MAX_WINDOW_SIZE : unack_count+1;
+                            if (unack_count != MAX_WINDOW_SIZE) {
+                                packet_index++;
+                            }
                         }
 
                     } else {
                         // Gremlin, packet was not sent
                         std::cout << "[Gremlin] Dropped packet " << packet_count << std::endl;
                     }
-                    
-                    // Clear our timeout value so we are waiting for the next request
-                    setsockopt(sd, SOL_SOCKET, SO_RCVTIMEO, &request_tv, sizeof(request_tv));
-
-                    // Sleep in the event of packet overflow
-                    usleep(100);
-
-                    // Increment loopCount
-                    loopCount++;
                 }
 
                 // Send terminal \0 byte to the client marking end of tranmission
@@ -412,4 +442,15 @@ int gremlins(char buffer[], double corruptionChance, double lossChance, double d
 
     return returnValue;
  
+}
+
+// buffToUint32
+//
+//  Convert a char[4] buffer to an uint32_t
+//
+uint32_t buffToUint32(char* buffer)
+{
+    int a;
+    memcpy(&a, buffer, sizeof( int ) );
+    return a;
 }
