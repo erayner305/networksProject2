@@ -238,6 +238,8 @@ int main() {
 
                                 // Decrement our missed packet count
                                 unack_count = (unack_count > 0) ? unack_count-1 : 0;
+
+                                // TODO: send requested packet...
                             }
 
                             else if (strcmp(response_type_buffer, NAK_INSTR) == 0) {
@@ -245,7 +247,7 @@ int main() {
                                 std::cout << "[Error] Received a NAK response type" << std::endl;
                                 std::cout << "\tRequested packet #: " << packet_num_requested << std::endl;
 
-                                // TODO: send...
+                                // TODO: send requested packet...
                             }
 
                             else {
