@@ -148,6 +148,11 @@ int main() {
     // File in stream
     std::ifstream file_in;
 
+    // Vector that holds the entire file contents divided into packets
+    std::vector<std::tuple<int, std::vector<char>>> file_data_vector;
+
+    // Vector that holds the 
+
     // Poll infinitely for requests from the client
     while (true) {
         std::cout << "Waiting for request" << std::endl;
@@ -180,8 +185,10 @@ int main() {
 
                 setsockopt(sd, SOL_SOCKET, SO_RCVTIMEO, &gbn_tv, sizeof(gbn_tv));
 
-                // File requested exists, send all of the packets for the file
-                while(!file_in.eof()){
+                // Generates a vetor containing all packets from file
+                int packet_number = 0;
+
+                while(!file_in.eof()) {
                     empty_buffer(packet, SEGMENT_SIZE);
                     empty_buffer(data_buffer, DATA_SIZE);
                     empty_buffer(checksum_buffer, CHECKSUM_SIZE);
@@ -199,7 +206,19 @@ int main() {
                     std::memcpy(packet+TERMINATOR_BYTE+CHECKSUM_SIZE, &packet_count_buffer, PACKET_COUNT_SIZE);
                     std::memcpy(packet+HEADER_SIZE, &data_buffer, DATA_SIZE);
 
-                    int packet_status = gremlins(data_buffer, packet_damage_rate, packet_loss_rate, packet_delay_rate);
+
+                    std::vector<char> packet_input_vector(packet, packet + len);
+                    std::tuple<uint32_t, std::vector<char>> packet_tuple (packet_number, packet_input_vector);
+                    packet_number++;
+                }
+
+
+                // File requested exists, send all of the packets for the file
+                int loopCount = 0;
+
+                while(loopCount < packet_tuple.size()) {
+
+                    int packet_status = gremlins("GARRET REPLACE WITH SOME WAY TO REFERENCE THE PACKET", packet_damage_rate, packet_loss_rate, packet_delay_rate);
 
                     if (packet_status != 1) {
 
@@ -274,6 +293,9 @@ int main() {
 
                     // Sleep in the event of packet overflow
                     usleep(100);
+
+                    // Increment loopCount
+                    loopCount++;
                 }
 
                 // Send terminal \0 byte to the client marking end of tranmission
